@@ -1,8 +1,0 @@
-.wrap{background:#F0F2F8;min-height:100%;padding:30px;}
-.header:after{content:'';display:block;clear:both;}
-.header .logo{float:left;}
-.header .gnb{float:right;}
-.gnb > a{vertical-align:middle;display:inline-block;margin-right:20px;}
-.gnb .name{font-size:14px;color:#555;text-decoration:underline;}
-.gnb .alarm{text-indent:-9999px;color:transparent;background:#E5E9F1 url(../images/common/ico_alarm.png) no-repeat center;width:48px;height:48px;border-radius:50%;opacity: 0.8;box-shadow: 0px 0px 8px #F9FAFF, inset 0px 2px 2px rgba(0, 0, 0, 0.05);}
-.gnb .logout{font-size:14px;color:#A3AAB6;text-shadow: 1px 1px 0px #FFFFFF;background:#E5E9F1;width:100px;height:48px;line-height:48px;text-align:center;box-shadow: -10px -10px 10px #F9FAFF, 10px 10px 10px rgba(67, 81, 92, 0.15), inset -2px -2px 2px rgba(255, 255, 255, 0.5), inset 2px 2px 2px rgba(0, 0, 0, 0.05);border-radius: 40px;}

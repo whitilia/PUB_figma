@@ -1,0 +1,36 @@
+/* common */
+*{letter-spacing:-0.8px;}
+body,html{background:#F0F2F8;}
+.wrap{min-height:100%;}
+
+/* header */
+.header{padding:30px 112px 27px 30px;}
+.header:after{content:'';display:block;clear:both;}
+.header .logo{float:left;}
+.header .gnb{float:right;}
+.gnb > a{vertical-align:middle;display:inline-block;margin-right:20px;}
+.gnb .name{font-size:14px;color:#555;text-decoration:underline;}
+.gnb .alarm{text-indent:-9999px;color:transparent;background:#E5E9F1 url(../images/common/ico_alarm.png) no-repeat center;width:48px;height:48px;border-radius:50%;opacity: 0.8;box-shadow: 0px 0px 8px #F9FAFF, inset 0px 2px 2px rgba(0, 0, 0, 0.05);}
+.gnb .logout{font-size:14px;color:#A3AAB6;text-shadow: 1px 1px 0px #FFFFFF;background:#E5E9F1;width:100px;height:48px;line-height:48px;text-align:center;box-shadow: -10px -10px 10px #F9FAFF, 10px 10px 10px rgba(67, 81, 92, 0.15), inset -2px -2px 2px rgba(255, 255, 255, 0.5), inset 2px 2px 2px rgba(0, 0, 0, 0.05);border-radius: 40px;}
+
+/* lnb */
+.lnb_wrap{width:365px;float:left;}
+.lnb{padding:66px 0 0 60px;}
+.lnb .top li a{font-size:22px;color:#191D2;}
+.lnb .menu{margin-top:38px;width:166px;}
+.lnb .menu > li{border-bottom:1px solid #fff;}
+.lnb .menu > li > a{font-size:18px;display:block;height:60px;line-height:60px;padding-left:25px;position:relative;border-bottom:1px solid #D0D6DF;}
+.lnb .menu > li > a:before{content:'';display:block;width:12px;height:12px;background:url(../images/contents/ico_menu_plus_off.png) no-repeat 0 0;position:absolute;left:0;top:50%;margin-top:-6px;}
+.lnb .menu > li.on > a{color:#4559a9;}
+.lnb .menu > li.on > a:before{background:url(../images/contents/ico_menu_plus_on.png) no-repeat 0 0;}
+.lnb .menu .tit{padding-left:18px;font-size:16px;color:#000;height:60px;line-height:60px;display:block;}
+.lnb .menu .tit{border-top:1px solid #D0D6DF;}
+.lnb .menu .tit:first-child{border-top:0;}
+.lnb .menu .sub_box{border-bottom:1px solid #D0D6DF;border-top:1px solid #fff;}
+.lnb .menu .sub_menu{line-height:32px;padding-bottom:20px;}
+.lnb .menu .sub_menu > li > a{padding-left:18px;display:block;font-size:16px;color:##666;}
+.lnb .menu .sub_menu > li.on > a{color:#000;text-decoration:underline;}
+
+/* container */
+.container{overflow:hidden;}
+.contents{float:right;width:-webkit-calc(100% - 365px);width:calc(100% - 365px);background:#000;}
