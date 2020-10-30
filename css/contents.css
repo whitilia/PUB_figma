@@ -99,7 +99,7 @@ textarea{display:block;width:100%;height:80px;border:1px solid #D4D8DB;backgroun
 .tag.green{background: #51C07F;}
 
 /* 프로세스 리스트형 */
-.process_wrap{}
+.process_wrap{display:block;}
 .process_wrap .obj_box{padding: 25px 35px;background: #F9FAFC;border: 1px solid #D4D8DB;box-shadow: 0px 2px 4px #EFF2F7;border-radius: 8px;}
 .process_wrap .obj_box .upper{padding: 0;}
 .process_wrap .obj_box .lower{padding: 0 65px;}
@@ -119,8 +119,8 @@ textarea{display:block;width:100%;height:80px;border:1px solid #D4D8DB;backgroun
 .process_wrap.type_card .obj_box .num{display:none;}
 .process_wrap.type_card .obj_box .tag{display:block;}
 .process_wrap.type_card .obj_box .title{display:block;}
-.process_wrap.type_card .obj_box .info{}
-.process_wrap.type_card .obj_box .info span{}
+.process_wrap.type_card .obj_box .info{display:block;}
+.process_wrap.type_card .obj_box .info span{display:block;}
 .process_wrap.type_card .obj_box .info.author{display:none;}
 .process_wrap.type_card .obj_box .info.graph{display:block;}
 .process_wrap.type_card .obj_box .info.status{position:absolute;top:0;right:0;}
@@ -134,40 +134,3 @@ textarea{display:block;width:100%;height:80px;border:1px solid #D4D8DB;backgroun
 
 
 
-
-<div class="obj_box">
-<div class="upper">
-    <span class="num">1</span>
-    <span class="tag small blue">제출</span>
-    <span class="title">위기관리업무 연락망 현황</span>
-</div>
-<div class="lower">
-    <div class="info author">
-        <span>작성자</span>
-        <span>홍길동</span>
-    </div>
-    <div class="info graph">
-        <span>제출현황</span>
-        <span>
-            <em class="bar"><i style="width:50%;">진행도</i></em>
-            <em>24/40</em>
-        </span>
-    </div>
-    <div class="info status">
-        <span>처리현황</span>
-        <span>지연</span>
-    </div>
-    <div class="info date">
-        <span>게시일</span>
-        <span>2020-08-01</span>
-    </div>
-    <div class="info term">
-        <span>제출기간</span>
-        <span>2020-08-13 18시</span>
-    </div>
-    <div class="info views">
-        <span>조회</span>
-        <span>55</span>
-    </div>
-</div>
-</div>
