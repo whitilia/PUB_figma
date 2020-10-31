@@ -16,7 +16,7 @@ body,html{background:#F0F2F8;}
 /* lnb */
 .lnb_wrap{width:365px;float:left;}
 .lnb{padding:66px 0 0 60px;}
-.lnb .top li a{font-size:22px;color:#191D2;}
+.lnb .top li a{font-size:22px;color:#191D21;}
 .lnb .menu{margin-top:38px;width:166px;}
 .lnb .menu > li{border-bottom:1px solid #fff;}
 .lnb .menu > li > a{font-size:18px;display:block;height:60px;line-height:60px;padding-left:25px;position:relative;border-bottom:1px solid #D0D6DF;}
@@ -28,7 +28,7 @@ body,html{background:#F0F2F8;}
 .lnb .menu .tit:first-child{border-top:0;}
 .lnb .menu .sub_box{border-bottom:1px solid #D0D6DF;border-top:1px solid #fff;}
 .lnb .menu .sub_menu{line-height:32px;padding-bottom:20px;}
-.lnb .menu .sub_menu > li > a{padding-left:18px;display:block;font-size:16px;color:##666;}
+.lnb .menu .sub_menu > li > a{padding-left:18px;display:block;font-size:16px;color:#666;}
 .lnb .menu .sub_menu > li.on > a{color:#000;text-decoration:underline;}
 
 /* container */
