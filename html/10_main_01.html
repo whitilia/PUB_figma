@@ -12,17 +12,41 @@
 <body> 
     <div class="wrap">
         <div class="header">
+            <div class="menu mobile">
+                <a href="#none" class="btn_">메뉴</a>
+            </div>
             <h1 class="logo"><a href="#home"><img src="../images/common/logo.png" alt="산업통상자원부 국회업무관리시스템 로고"></a></h1>
-            <div class="gnb web">
-                <a href="#none" class="name">홍길동</a>
+            <div class="gnb">
+                <a href="#none" class="name web">홍길동</a>
                 <a href="#none" class="alarm">알림<span class="num">555</span></a>
-                <a href="#none" class="logout">LOGOUT</a>
+                <a href="#none" class="logout web">LOGOUT</a>
+            </div>
+            <div class="alarm_box">
+                <div class="tab_area">
+                    <ul class="tab">
+                        <li class="on"><a href="#none">미확인알림</a></li>
+                        <li><a href="#none">전체알림</a></li>
+                    </ul>
+                </div>
+                <div class="tab_cont_area">
+                    <div class="tab_cont">
+                        <ul class="">
+                            <li>
+                                <span class="tit"><a href="#none">새로운 게시글이 등록되었습니다.</a></span>
+                                <span class="name">작성자 : 홍길동 주무관</span>
+                                <span class="date">2020-08-17, 14:52</span>
+                                <span class="btn_delete"><img src="../images/contents/btn_del.png" alt="삭제" /></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_area"><img src="../images/contents/btn_more.png" alt="더보기"></div>
             </div>
         </div>
 
         <div class="container">
-            <!-- lnb -->
-            <div class="lnb">
+           <!-- lnb -->
+           <div class="lnb">
                 <div class="gnb mobile">
                     <a href="#none" class="name">홍길동</a>
                     <a href="#none" class="logout">LOGOUT</a>
@@ -34,26 +58,18 @@
                         <li><a href="#none">내가 게시한 글</a></li>
                     </ul>
                     <ul class="menu">
-                        <li><a href="#none">방생성</a>
-                            <ul class="sub">
-                                <li><a href="#none"></a></li>
-                            </ul>
-                        </li>
+                        <li><a href="#none">방생성</a></li>
                         <li><a href="#none">방 가입신청</a></li>
                         <li class="on"><a href="#none">공용 회의실 예약</a>
-                            <div class="sub_box">
-                                <strong class="tit">회원관리</strong>
-                                <ul class="sub_menu">
-                                    <li class="on"><a href="#none">공용회의실 정보관리</a></li><!-- 선택되었을 때 "on" -->
-                                    <li><a href="#none">공용회의실 권한신청</a></li>
-                                    <li><a href="#none">회의실 관리자 권한승인</a></li>
-                                </ul>
-                                <strong class="tit">산하기관 및 외부기업</strong>
-                                <ul class="sub_menu">
-                                    <li><a href="#none">기관 및 기업관리</a></li>
-                                    <li><a href="#none">기관 및 기업 회원관리</a></li>
-                                </ul>
-                            </div>
+                            <ul class="sub_menu">
+                                <li class="on"><a href="#none">회원 관리</a></li><!-- 선택되었을 때 "on" -->
+                                <li><a href="#none">담당자 관리</a></li>
+                                <li><a href="#none">방 관리</a></li>
+                                <li><a href="#none">공지사항 관리</a></li>
+                                <li><a href="#none">공용회의실 관리</a></li>
+                                <li><a href="#none">산하기관 및 외부기업</a></li>
+                                <li><a href="#none">코드관리</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
