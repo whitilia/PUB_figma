@@ -7,7 +7,7 @@
 .header{height:74px;position:relative;padding:0;}
 .header .menu{position:absolute;left:29px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);z-index:1;}
 .header .menu .btn_menu{position:relative;font-size:0;color:transparent;width:20px;height:16px;display:inline-block;background:url(../images/contents/ico_menu.png) no-repeat;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);}
-.header .menu .btn_menu.close:before{content:'';display:inline-block;background:#003763 url(../images/contents/ico_menu_x.png) no-repeat center;width:48px;height:48px;position:absolute;-webkit-transform:translate(-50%, -50%);top:50%;left:50%;border-radius:50%;}
+.header .menu .btn_menu.close:before{content:'';display:inline-block;background:#003763 url(../images/contents/ico_menu_x.png) no-repeat center;width:48px;height:48px;position:absolute;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);top:50%;left:50%;border-radius:50%;}
 .header .gnb{margin-right:0;}
 .header .logo{float:auto;width:212px;position:absolute;left:0;right:0;margin:0 auto;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);z-index:0;}
 .header .logo a img{width:100%;}
