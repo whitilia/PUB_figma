@@ -24,3 +24,18 @@
         url(./font/NotoSansKR-Bold.woff) format('woff'),
         url(./font/NotoSansKR-Bold.otf) format('opentype');
 }
+
+@font-face {
+   font-family: 'Rubik';
+   font-style: normal;
+   font-weight: 500;
+   src: url(./font/Rubik-Medium.woff) format('woff'),
+        url(./font/Rubik-Medium.otf) format('truetype');
+}
+@font-face {
+        font-family: 'Rubik';
+        font-style: bold;
+        font-weight: 700;
+        src: url(./font/Rubik-Black.woff) format('woff'),
+             url(./font/Rubik-Black.otf) format('truetype');
+     }
