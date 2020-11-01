@@ -29,13 +29,20 @@
    font-family: 'Rubik';
    font-style: normal;
    font-weight: 500;
-   src: url(./font/Rubik-Medium.woff) format('woff'),
-        url(./font/Rubik-Medium.otf) format('truetype');
+   src: url(./font/Rubik-Regular.woff) format('woff'),
+        url(./font/Rubik-Regular.ttf) format('truetype');
 }
 @font-face {
         font-family: 'Rubik';
         font-style: bold;
         font-weight: 700;
-        src: url(./font/Rubik-Black.woff) format('woff'),
-             url(./font/Rubik-Black.otf) format('truetype');
-     }
+        src: url(./font/Rubik-ExtraBold.woff) format('woff'),
+                url(./font/Rubik-ExtraBold.ttf) format('truetype');
+}
+@font-face {
+        font-family: 'DoHyeon';
+        font-style: normal;
+        font-weight: 500;
+        src: url(./font/DoHyeon-Regular.woff) format('woff'),
+                url(./font/DoHyeon-Regular.ttf) format('truetype');
+}
