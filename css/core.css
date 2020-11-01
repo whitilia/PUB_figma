@@ -111,3 +111,7 @@ table caption{overflow:hidden; position:relative; line-height:1px; font-size:1px
 .ml_40{margin-left:40px !important;}
 .ml_45{margin-left:45px !important;}
 .ml_50{margin-left:50px !important;}
+
+/* ellipsis */
+.ellipsis{display: inline-block; width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.ellipsis_multi{display: inline-block; width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}/* 기본 3줄 */
