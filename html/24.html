@@ -7,7 +7,8 @@
 <meta name="format-detection" content="telephone=no,email=no,address=no">
 <title>산업통상자원부 국회업무관리시스템</title> 
 <link rel="stylesheet" href="../css/common.css"> 
-<script src="../js/jquery-3.5.1.min.js.js"></script> 
+<script src="../js/jquery-3.5.1.min.js"></script> 
+<script src="../js/content.js"></script> 
 </head>
 <body> 
     <div class="wrap">
@@ -16,6 +17,464 @@
             <div class="contents">
                 <!-- contents -->
                 <div class="content_wrap">
+
+                    <!-- title 영역 시작 -->
+                    <h3 class="title ico_door">개인정보조사</h3>
+                    <div class="member_area">
+                        <dl class="master">
+                            <dt>방장</dt>
+                            <dd>홍길동</dd>
+                        </dl>
+                        <dl class="crew">
+                            <dt>멤버</dt>
+                            <dd>31명</dd>
+                        </dl>
+                        <ul>
+                            <li><a href="#none" class="btn_list on"><span>리스트형</span></a></li>
+                            <li><a href="#none" class="btn_card"><span>카드형</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- //title 영역 끝 -->
+
+                    <!-- 리플 시작 -->
+                    <div class="comp_reply mt_30">
+                        <div class="reply_output iscroll_wrap">
+                            <div class="reply_view left">
+                                <div class="reply_user">
+                                    <span class="circle">장구혁</span>
+                                </div>
+                                <div class="reply_message">
+                                    <span class="message_cont">
+                                        <em class="message_center">채팅 형식의 한줄댓글 UI. 다른 사람이 입력한 한줄댓글 내용이 여기에 들어갑니다.</em>
+                                        <em class="message_right">2020-10-03</em>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="reply_view right">
+                                <div class="reply_message">
+                                    <span class="message_cont">
+                                        <em class="message_left">2020-10-03</em>
+                                        <em class="message_center">채팅 형식의 한줄댓글 UI. 다른 사람이 입력한 한줄댓글 내용이 여기에 들어갑니다.</em>
+                                        <em class="message_right">홍길동</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reply_input">
+                            <input type="text" placeholder="댓글을 입력하세요 (Enter는 입력, shift or ctrl + Enter는 줄바꿈)">
+                        </div>
+                    </div>
+                    <!-- //리플 끝 -->
+                    
+                    <!-- 리스트타입 시작 -->
+                    <ul class="process_wrap type_list mt_60">
+                        <li>
+                            <div class="obj_box">
+                                <div class="upper">
+                                    <span class="num">1</span>
+                                    <span class="tag small blue">제출</span>
+                                    <span class="title">위기관리업무 연락망 현황</span>
+                                </div>
+                                <div class="lower">
+                                    <div class="info author">
+                                        <span>작성자</span>
+                                        <span>홍길동</span>
+                                    </div>
+                                    <div class="info graph">
+                                        <span>제출현황</span>
+                                        <span>
+                                            <em class="bar"><i style="width:50%;">진행도</i></em>
+                                            <em>24/40</em>
+                                        </span>
+                                    </div>
+                                    <div class="info status">
+                                        <span>처리현황</span>
+                                        <span class="blue">지연</span>
+                                    </div>
+                                    <div class="info date">
+                                        <span>게시일</span>
+                                        <span>2020-08-01</span>
+                                    </div>
+                                    <div class="info term">
+                                        <span>제출기간</span>
+                                        <span>2020-08-13 18시</span>
+                                    </div>
+                                    <div class="info views">
+                                        <span>조회</span>
+                                        <span>55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="obj_box">
+                                <div class="upper">
+                                    <span class="num">1</span>
+                                    <span class="tag small blue">제출</span>
+                                    <span class="title">위기관리업무 연락망 현황</span>
+                                </div>
+                                <div class="lower">
+                                    <div class="info author">
+                                        <span>작성자</span>
+                                        <span>홍길동</span>
+                                    </div>
+                                    <div class="info graph">
+                                        <span>제출현황</span>
+                                        <span>
+                                            <em class="bar"><i style="width:50%;">진행도</i></em>
+                                            <em>24/40</em>
+                                        </span>
+                                    </div>
+                                    <div class="info status">
+                                        <span>처리현황</span>
+                                        <span class="red">지연</span>
+                                    </div>
+                                    <div class="info date">
+                                        <span>게시일</span>
+                                        <span>2020-08-01</span>
+                                    </div>
+                                    <div class="info term">
+                                        <span>제출기간</span>
+                                        <span>2020-08-13 18시</span>
+                                    </div>
+                                    <div class="info views">
+                                        <span>조회</span>
+                                        <span>55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="obj_box">
+                                <div class="upper">
+                                    <span class="num">1</span>
+                                    <span class="tag small blue">제출</span>
+                                    <span class="title">위기관리업무 연락망 현황</span>
+                                </div>
+                                <div class="lower">
+                                    <div class="info author">
+                                        <span>작성자</span>
+                                        <span>홍길동</span>
+                                    </div>
+                                    <div class="info graph">
+                                        <span>제출현황</span>
+                                        <span>
+                                            <em class="bar"><i style="width:50%;">진행도</i></em>
+                                            <em>24/40</em>
+                                        </span>
+                                    </div>
+                                    <div class="info status">
+                                        <span>처리현황</span>
+                                        <span>지연</span>
+                                    </div>
+                                    <div class="info date">
+                                        <span>게시일</span>
+                                        <span>2020-08-01</span>
+                                    </div>
+                                    <div class="info term">
+                                        <span>제출기간</span>
+                                        <span>2020-08-13 18시</span>
+                                    </div>
+                                    <div class="info views">
+                                        <span>조회</span>
+                                        <span>55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="obj_box">
+                                <div class="upper">
+                                    <span class="num">1</span>
+                                    <span class="tag small blue">제출</span>
+                                    <span class="title">위기관리업무 연락망 현황</span>
+                                </div>
+                                <div class="lower">
+                                    <div class="info author">
+                                        <span>작성자</span>
+                                        <span>홍길동</span>
+                                    </div>
+                                    <div class="info graph">
+                                        <span>제출현황</span>
+                                        <span>
+                                            <em class="bar"><i style="width:50%;">진행도</i></em>
+                                            <em>24/40</em>
+                                        </span>
+                                    </div>
+                                    <div class="info status">
+                                        <span>처리현황</span>
+                                        <span>지연</span>
+                                    </div>
+                                    <div class="info date">
+                                        <span>게시일</span>
+                                        <span>2020-08-01</span>
+                                    </div>
+                                    <div class="info term">
+                                        <span>제출기간</span>
+                                        <span>2020-08-13 18시</span>
+                                    </div>
+                                    <div class="info views">
+                                        <span>조회</span>
+                                        <span>55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="obj_box">
+                                <div class="upper">
+                                    <span class="num">1</span>
+                                    <span class="tag small blue">제출</span>
+                                    <span class="title">위기관리업무 연락망 현황</span>
+                                </div>
+                                <div class="lower">
+                                    <div class="info author">
+                                        <span>작성자</span>
+                                        <span>홍길동</span>
+                                    </div>
+                                    <div class="info graph">
+                                        <span>제출현황</span>
+                                        <span>
+                                            <em class="bar"><i style="width:50%;">진행도</i></em>
+                                            <em>24/40</em>
+                                        </span>
+                                    </div>
+                                    <div class="info status">
+                                        <span>처리현황</span>
+                                        <span>지연</span>
+                                    </div>
+                                    <div class="info date">
+                                        <span>게시일</span>
+                                        <span>2020-08-01</span>
+                                    </div>
+                                    <div class="info term">
+                                        <span>제출기간</span>
+                                        <span>2020-08-13 18시</span>
+                                    </div>
+                                    <div class="info views">
+                                        <span>조회</span>
+                                        <span>55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- //리스트타입 끝 -->
+                    
+                    <!-- 카드타입 시작 -->
+                    <ul class="process_wrap type_card mt_60 none">
+                        <li>
+                            <div class="obj_box">
+                                <div class="upper">
+                                    <span class="num">1</span>
+                                    <span class="tag small blue">제출</span>
+                                    <span class="title">위기관리업무 연락망 현황</span>
+                                </div>
+                                <div class="lower">
+                                    <div class="info author">
+                                        <span>작성자</span>
+                                        <span>홍길동</span>
+                                    </div>
+                                    <div class="info graph">
+                                        <span>제출현황</span>
+                                        <span>
+                                            <em class="bar"><i style="width:50%;">진행도</i></em>
+                                            <em>24/40</em>
+                                        </span>
+                                    </div>
+                                    <div class="info status">
+                                        <span>처리현황</span>
+                                        <span class="blue">지연</span>
+                                    </div>
+                                    <div class="info date">
+                                        <span>게시일</span>
+                                        <span>2020-08-01</span>
+                                    </div>
+                                    <div class="info term">
+                                        <span>제출기간</span>
+                                        <span>2020-08-13 18시</span>
+                                    </div>
+                                    <div class="info views">
+                                        <span>조회</span>
+                                        <span>55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="obj_box">
+                                <div class="upper">
+                                    <span class="num">1</span>
+                                    <span class="tag small blue">제출</span>
+                                    <span class="title">위기관리업무 연락망 현황</span>
+                                </div>
+                                <div class="lower">
+                                    <div class="info author">
+                                        <span>작성자</span>
+                                        <span>홍길동</span>
+                                    </div>
+                                    <div class="info graph">
+                                        <span>제출현황</span>
+                                        <span>
+                                            <em class="bar"><i style="width:50%;">진행도</i></em>
+                                            <em>24/40</em>
+                                        </span>
+                                    </div>
+                                    <div class="info status">
+                                        <span>처리현황</span>
+                                        <span class="red">지연</span>
+                                    </div>
+                                    <div class="info date">
+                                        <span>게시일</span>
+                                        <span>2020-08-01</span>
+                                    </div>
+                                    <div class="info term">
+                                        <span>제출기간</span>
+                                        <span>2020-08-13 18시</span>
+                                    </div>
+                                    <div class="info views">
+                                        <span>조회</span>
+                                        <span>55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="obj_box">
+                                <div class="upper">
+                                    <span class="num">1</span>
+                                    <span class="tag small blue">제출</span>
+                                    <span class="title">위기관리업무 연락망 현황</span>
+                                </div>
+                                <div class="lower">
+                                    <div class="info author">
+                                        <span>작성자</span>
+                                        <span>홍길동</span>
+                                    </div>
+                                    <div class="info graph">
+                                        <span>제출현황</span>
+                                        <span>
+                                            <em class="bar"><i style="width:50%;">진행도</i></em>
+                                            <em>24/40</em>
+                                        </span>
+                                    </div>
+                                    <div class="info status">
+                                        <span>처리현황</span>
+                                        <span>지연</span>
+                                    </div>
+                                    <div class="info date">
+                                        <span>게시일</span>
+                                        <span>2020-08-01</span>
+                                    </div>
+                                    <div class="info term">
+                                        <span>제출기간</span>
+                                        <span>2020-08-13 18시</span>
+                                    </div>
+                                    <div class="info views">
+                                        <span>조회</span>
+                                        <span>55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="obj_box">
+                                <div class="upper">
+                                    <span class="num">1</span>
+                                    <span class="tag small blue">제출</span>
+                                    <span class="title">위기관리업무 연락망 현황</span>
+                                </div>
+                                <div class="lower">
+                                    <div class="info author">
+                                        <span>작성자</span>
+                                        <span>홍길동</span>
+                                    </div>
+                                    <div class="info graph">
+                                        <span>제출현황</span>
+                                        <span>
+                                            <em class="bar"><i style="width:50%;">진행도</i></em>
+                                            <em>24/40</em>
+                                        </span>
+                                    </div>
+                                    <div class="info status">
+                                        <span>처리현황</span>
+                                        <span>지연</span>
+                                    </div>
+                                    <div class="info date">
+                                        <span>게시일</span>
+                                        <span>2020-08-01</span>
+                                    </div>
+                                    <div class="info term">
+                                        <span>제출기간</span>
+                                        <span>2020-08-13 18시</span>
+                                    </div>
+                                    <div class="info views">
+                                        <span>조회</span>
+                                        <span>55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="obj_box">
+                                <div class="upper">
+                                    <span class="num">1</span>
+                                    <span class="tag small blue">제출</span>
+                                    <span class="title">위기관리업무 연락망 현황</span>
+                                </div>
+                                <div class="lower">
+                                    <div class="info author">
+                                        <span>작성자</span>
+                                        <span>홍길동</span>
+                                    </div>
+                                    <div class="info graph">
+                                        <span>제출현황</span>
+                                        <span>
+                                            <em class="bar"><i style="width:50%;">진행도</i></em>
+                                            <em>24/40</em>
+                                        </span>
+                                    </div>
+                                    <div class="info status">
+                                        <span>처리현황</span>
+                                        <span>지연</span>
+                                    </div>
+                                    <div class="info date">
+                                        <span>게시일</span>
+                                        <span>2020-08-01</span>
+                                    </div>
+                                    <div class="info term">
+                                        <span>제출기간</span>
+                                        <span>2020-08-13 18시</span>
+                                    </div>
+                                    <div class="info views">
+                                        <span>조회</span>
+                                        <span>55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- //카드타입 끝 -->
+                    
+                    <!-- 페이징 시작 -->
+                    <div class="comp_paging mt_40">
+                        <a href="#none"><span class="prev02">맨앞으로</span></a>
+                        <a href="#none"><span class="prev01">이전</span></a>
+                        <a href="#none"><span>1</span></a>
+                        <a href="#none"><span>2</span></a>
+                        <a href="#none"><span>3</span></a>
+                        <a href="#none"><span>4</span></a>
+                        <a href="#none"><span class="next01">다음</span></a>
+                        <a href="#none"><span class="next02">맨마지막으로</span></a>
+                    </div>
+                    <!-- //페이징 끝 -->
+
+                    <!-- 버튼 시작 -->
+                    <div class="btn_area clearfix mt_20">
+                        <button class="btn_custom01 fl_l"><span>방목록</span></button>
+                        <button class="btn_modify fl_r"><span>등록</span></button>
+                    </div>
+                    <!-- //버튼 끝 -->
                 </div>
                 <!-- //contents -->
             </div>
