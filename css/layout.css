@@ -21,9 +21,10 @@ body,html{background:#F0F2F8;}
 .alarm_box .tab_list li{width:50%;float:left;}
 .alarm_box .tab_list li > a{width:100%%;display:block;background:#8658E4;border-radius:15px 15px 0 0 ;height:43px;line-height:43px;font-size:15px;color:#fff;text-align:center;}
 .alarm_box .tab_list li.on > a{background:#fff;color:#A376FF;}
-.alarm_box .tab_cont{display:block;padding:0 30px;background:#fff;}
+.alarm_box .tab_cont{padding:0 30px;background:#fff;display:none;}
+.alarm_box .tab_cont:first-child{display:block;}
 .alarm_box .tab_cont .alarm_list li{position:relative;padding:20px 0;border-bottom:1px solid #ddd;}
-.alarm_box .tab_cont .alarm_list li > a{display:inline-block;}
+.alarm_box .tab_cont .alarm_list li > a{display:inline-block;margin-right:18px;}
 .alarm_box .tab_cont .alarm_list li > a span{display:block;}
 .alarm_box .tab_cont .alarm_list li > a span.tit{font-size:15px;color:#666;}
 .alarm_box .tab_cont .alarm_list li > a span.name{font-size:15px;color:#666;}
@@ -63,7 +64,7 @@ body,html{background:#F0F2F8;}
 /* 반응형 태그 */
 .br{display:block;}
 .mobile{display:none;}
-
+.fixed{overflow:hidden;}
 /* MAIN */
 .main_wrap{padding-right:80px;}
 .main_list_wrap{padding-top:20px;margin-left:-40px;}
