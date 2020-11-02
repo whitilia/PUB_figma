@@ -57,7 +57,8 @@ body,html{background:#F0F2F8;}
 .lnb .box .menu .sub_menu > li.on:before{background:#34C759;}
 
 /* container */
-.container{overflow:hidden;height:100%;}
+.container{height:-webkit-calc(100% - 105px);height:calc(100% - 105px);;}
+.container:after{content:'';display:table;clear:both;}
 .contents{float:right;width:-webkit-calc(100% - 365px);width:calc(100% - 365px);height:100%;}
 
 /* button */
