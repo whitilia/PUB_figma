@@ -10,7 +10,7 @@
 <script src="../js/jquery-3.5.1.min.js"></script> 
 <script src="../js/content.js"></script> 
 </head>
-<body> 
+<body class="noscl"> <!-- 모달 팝업 생성 시 클래스 추가 -->
     <div class="wrap">
         <!-- header -->
         <div class="header">
@@ -179,9 +179,134 @@
         </div>
         <!-- //footer, mobile -->
     </div>
-    
-
 
     <!-- POPUP -->
+    <div class="modal_wrap">
+        <div class="modal_dimmed"></div>
+        <div class="madal" style="margin-top:-430px;"><!-- 팝업 height의 절반값 음수로 margin-top 추가 -->
+            <a href="#none" class="btn_close"></a>
+            <h3 class="title">담당기관 조회하기</h3>
+            <p class="subtit">기관 검색</p>
+            <div class="madal_search_area01">
+                <span class="modal_sel">
+                    <select id="sel">
+                        <option>준정부기관</option>
+                        <option>준정부기관</option>
+                        <option>준정부기관</option>
+                        <option>준정부기관</option>
+                    </select>
+                </span>
+                <span class="input">
+                    <input type="text" placeholder="">
+                </span>
+                <a href="#none" class="btn_search">검색</a>
+            </div>
+            <p class="subtit">기관 리스트</p>
+            <div class="modal_list">
+                <p class="group_tit">나의 그룹</p>
+                <span class="modal_sel">
+                    <select id="sel">
+                        <option>공직기강 및 부패장비 업무연락 그룹</option>
+                        <option>공직기강 및 부패장비 업무연락 그룹</option>
+                        <option>공직기강 및 부패장비 업무연락 그룹</option>
+                        <option>공직기강 및 부패장비 업무연락 그룹</option>
+                    </select>
+                </span>
+                <div class="register_wrap">
+                    <div class="btn_area">
+                        <div class="fl_r">
+                            <a href="#none" class="btn_up01">위로</a>
+                            <a href="#none" class="btn_down01">아래로</a>
+                            <a href="#none" class="btn_up02">맨위로</a>
+                            <a href="#none" class="btn_down02">맨아래로</a>
+                        </div>
+                    </div>
+                    <div class="tbl_area">
+                        <div class="table">
+                            <table>
+                                <colgroup>
+                                    <col width="40%"/>
+                                    <col width=""/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>기관코드</th>
+                                        <th>기관명</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1302</td>
+                                        <td>부서명</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <td>1302</td>
+                                        <td>부서명</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <td>1302</td>
+                                        <td>부서명</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1302</td>
+                                        <td>부서명</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn_area">
+                            <a href="#none" class="btn_left">왼쪽으로</a>
+                            <a href="#none" class="btn_right">오른쪽으로</a>
+                        </div>
+                        <div class="table">
+                            <table>
+                                <colgroup>
+                                    <col width="30%"/>
+                                    <col width="40%"/>
+                                    <col width=""/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>순번</th>
+                                        <th>기관코드</th>
+                                        <th>기관명</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="active">
+                                        <td>1</td>
+                                        <td>1302</td>
+                                        <td>기관명</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1302</td>
+                                        <td>기관명</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1302</td>
+                                        <td>기관명</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1302</td>
+                                        <td>기관명</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <p class="txt_blue">리스트에 없는 기관은 관리자에게 기관 등록을 요청해주세요.</p>
+            </div>
+            <div class="btn_area btn_center">
+                <button class="btn_modify"><span>선택</span></button>
+                <button class="btn_custom01"><span>닫기</span></button>
+            </div>
+
+        </div>
+    </div>
+    <!-- //POPUP -->
 </body>
 </html>
