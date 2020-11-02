@@ -1,6 +1,12 @@
 /* contents */
-.title.ico_bookmark_none{background:url(../images/contents/ico_bookmark_none.png) no-repeat 0 -10px;padding-left:50px;line-height:15px;}
-
+.title{height: 50px;line-height: 50px;font-size: 28px;font-weight: 700;color: #000;position:relative;}
+.title:before{content:'';display:block;position:absolute;left:0;top:-13px;width:50px;height:50px;background:url(../images/contents/ico_bookmark_none.png) no-repeat 0 0;line-height:25px;}
+.title[class*="ico_"]{padding-left:50px;}
+.title.ico_bookmark:before{background:url(../images/contents/ico_bookmark.png) no-repeat 0 0;}
+.title.ico_crown:before{background:url(../images/contents/ico_crown.png) no-repeat 0 0;}
+.title.ico_door:before{background:url(../images/contents/ico_door.png) no-repeat 0 0;}
+.title.ico_new:before{background:url(../images/contents/ico_new02.png) no-repeat 0 0;}
+.title.ico_bookmark_none:before{background:url(../images/contents/ico_book_mark_none.png) no-repeat 0 0;}
 
 /* common */
 *{letter-spacing:-1.2px;}
