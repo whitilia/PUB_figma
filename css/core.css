@@ -20,3 +20,7 @@ table caption{overflow:hidden; position:relative; line-height:1px; font-size:1px
 .clearfix:after{content:'';display:table;clear:both;}
 .fl_l{float:left;}
 .fl_r{float:right;}
+
+/* font */
+.txt_blue{color:#345FF9}
+.txt_red{color:#F44462}

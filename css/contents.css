@@ -132,7 +132,7 @@ textarea{display:inline-block;width:100%;height:80px;border:1px solid #D4D8DB;ba
 .process_wrap.type_card li{float:left;width:25%;margin-top: 40px;}
 .process_wrap.type_card li:nth-child(1), .process_wrap.type_card li:nth-child(2), .process_wrap.type_card li:nth-child(3), .process_wrap.type_card li:nth-child(4){margin-top:0;}
 .process_wrap.type_card .obj_box{position:relative;padding: 20px;margin-left:40px;}
-.process_wrap .obj_box .lower{padding: 0 0 23px 0;}
+.process_wrap.type_card .obj_box .lower{padding: 0 0 23px 0;}
 .process_wrap.type_card .obj_box .num{display:none;}
 .process_wrap.type_card .obj_box .tag{display:block;margin-bottom:15px;}
 .process_wrap.type_card .obj_box .title{display:block;height:auto;}
@@ -315,7 +315,7 @@ body.noscl{overflow: hidden;}
 .modal_tbl_list table th:last-of-type{border-right: none;}
 .modal_tbl_list table td:last-of-type{border-right: none;}
 
-.modal_tbl_detail{}
+/* modal_tbl_detail */
 .modal_tbl_detail table{border-left: none;}
 .modal_tbl_detail table td{text-align: left;padding: 0 20px;}
 .modal_tbl_detail table td:last-of-type{border-right: none;}
