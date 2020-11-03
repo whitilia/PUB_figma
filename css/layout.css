@@ -70,6 +70,11 @@ body,html{background:#F0F2F8;}
 .mobile{display:none;}
 .fixed{overflow:hidden;}
 
+/* IE only */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .num .gra{background: none;color:#2448E0;}
+}
+
 /* MAIN */
 .main_wrap{padding-right:80px;padding-bottom:50px;}
 .main_list_wrap{padding-top:20px;margin-left:-40px;}
@@ -93,11 +98,11 @@ body,html{background:#F0F2F8;}
 .main_list_wrap .list_cont .list_area .main_list{border-bottom:1px solid #fff;width:100%;}
 .main_list_wrap .list_cont .list_area .main_list  > li{display:table;table-layout:fixed;width:100%;border-bottom:1px solid #D0D6DF;border-top:1px solid #fff;}
 .main_list_wrap .list_cont .list_area .main_list  > li:first-child{border-top:0;}
-.main_list_wrap .list_cont .list_area .main_list .tit{position:relative;display:table-cell;vertical-align:middle;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.main_list_wrap .list_cont .list_area .main_list .tit > a{display:inline-block;WIDTH:100%;font-size:15px;color:#555;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.main_list_wrap .list_cont .list_area .main_list .tit{position:relative;display:table-cell;vertical-align:middle;}
+.main_list_wrap .list_cont .list_area .main_list .tit > a{display:inline-block;width:90%;font-size:15px;color:#555;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .main_list_wrap .list_cont .list_area .main_list .tit > a:hover{color:#0063FF;}
-.main_list_wrap .list_cont .list_area .main_list >li.new .tit{padding-right:20px;}
-.main_list_wrap .list_cont .list_area .main_list >li.new .tit:after{position:absolute;right:0;top:50%;margin-top:-10px;content:'';display:inline-block;width:14px;height:14px;background:url(../images/contents/ico_main_new.png) no-repeat 0 0;}
+.main_list_wrap .list_cont .list_area .main_list >li.new .tit a{padding-right:20px;}
+.main_list_wrap .list_cont .list_area .main_list >li.new .tit a:after{position:absolute;right:0;top:50%;margin-top:-10px;content:'';display:inline-block;width:14px;height:14px;background:url(../images/contents/ico_main_new.png) no-repeat 0 0;}
 .main_list_wrap .list_cont .list_area .main_list .date{text-align:right;display:table-cell;vertical-align:middle;width:80px;height:30px;color:#555;font-size:12px;letter-spacing:0;}
 .main_list_wrap .list_cont .btn_area{position:absolute;bottom:25px;left:0;right:0;text-align:center;width:100%;}
 /* ROOM */
@@ -157,6 +162,44 @@ body,html{background:#F0F2F8;}
 .main_room_wrap .btn_bookmark_add span:after{content:'';position:absolute;right:0;top:50%;margin-top:-24px;width:48px;height:48px;border-radius:50%;display:inline-block;background: #F0F2F8 url(../images/contents/ico_add.png) no-repeat center;opacity: 0.8; box-shadow: -10px -10px 10px #F9FAFF, 10px 10px 10px rgba(67, 81, 92, 0.15), inset -2px -2px 2px rgba(255, 255, 255, 0.5), inset 2px 2px 2px rgba(0, 0, 0, 0.05);}
 .main_room_wrap .btn_bookmark_add.txt_none span{font-size:0;line-height:0;color:transparent;}
 
+
+/* 나의 회원 상태 */
+.join_panel_box{margin-left:-40px;margin-top:30px;margin-bottom:60px;}
+.join_panel_box:after{content:'';display:block;clear:both;}
+.join_panel_box li{width:25%;float:left;}
+.join_panel_box li .cont{display:block;height:198px;margin-left:40px;border: 1px solid #D4D8DB;box-sizing: border-box;box-shadow: 0px 2px 4px #EFF2F7;border-radius: 16px;}
+.join_panel_box li .cont span{display:block;}
+.join_panel_box li .cont .box{padding:33px 20px;position:relative;}
+.join_panel_box li .cont .box:after{content:'';position:absolute;top:15px;right:15px;display:block;width:24px;height:24px;background:url(../images/contents/ico_plus_off.png) no-repeat 0 0;}
+.join_panel_box li .cont .box .tit{border-bottom:1px solid #D4D8DB;padding-bottom:18px;text-align:center;font-size:24px;color:#222;}
+.join_panel_box li .cont .box .num{user-select: none;vertical-align:middle;text-align:center;}
+.join_panel_box li .cont .box .num em{font-size:24px;color:#818898;}
+.join_panel_box li .cont .box .num .gra{vertical-align:middle;display:inline-block;margin-right:5px;font-size:56px;font-family:Rubik;font-weight:700;background:linear-gradient(180deg, #2448E0 0%, #8C9EFF 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.join_panel_box li.on .cont{background: linear-gradient(180deg, #7694FF 0%, #687DF2 100%);box-shadow: 0px 2px 4px #EFF2F7;}
+.join_panel_box li.on .cont .box .tit{color:#fff;border-bottom:1px solid rgba(255,255,255,0.5);}
+.join_panel_box li.on .cont .box .num em{color:#fff;}
+.join_panel_box li.on .cont .box .num .gra{color:#fff;background:none;-webkit-text-fill-color:#fff;}
+.join_panel_box li.on .cont .box:after{background:url(../images/contents/ico_plus_on.png) no-repeat 0 0;}
+.join_list_box{margin-top:30px;}
+.join_list_box li{margin-top:21px;background: #F9FAFC;border: 1px solid #D4D8DB;box-sizing: border-box;border-radius: 8px;}
+.join_list_box li:first-child{margin-top:0;}
+.join_list_box li .tb{display:table;width:100%;table-layout:fixed;}
+.join_list_box li .cell{display:table-cell;height:82px;vertical-align:middle;text-align:center;}
+.join_list_box li .cell.num{width:100px;}
+.join_list_box li .cell.tit{text-align:left;}
+.join_list_box li .cell.name{width:150px;}
+.join_list_box li .cell.count{width:150px;}
+.join_list_box li .cell.date{width:200px;}
+.join_list_box li .cell.state{width:120px;}
+.join_list_box li .cell.num span{display:inline-block;width:36px;height:31px;line-height:31px;font-size:16px;color:#191D21;background: #F0F2F8;text-align:center;border-radius: 4px;}
+.join_list_box li .cell.tit{width:65%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.join_list_box li .cell .stit{position:relative;padding-right:10px;margin-right:10px;color:#666;font-size:16px;}
+.join_list_box li .cell .data{color:#222;font-size:16px;}
+.join_list_box li .cell .stit:after{content:'';display:inline-block;position:absolute;top:50%;margin-top:-7px;right:0;width:1px;height:15px;background:#BDBDBD;}
+.join_list_box li .cell.state .ico{text-align:center;width:70px;height:37px;line-height:37px;color:#fff;background:#7694FF;display:inline-block;background: #7694FF;border-radius: 8px;}
+.join_list_box li .cell.state .ico.join{background:#7694FF;}
+.join_list_box li .cell.state .ico.settle{background:#455BA9;}
+.join_list_box li .cell.state .ico.return{background:#F44462;}
 /* footer */
 .footer.web{margin-top:100px;padding:30px;width:250px;}
 .footer address{font-style:normal;color:#666;font-size:12px;text-align:left;line-height:20px;}
