@@ -18,9 +18,9 @@ table caption{overflow:hidden; position:relative; line-height:1px; font-size:1px
 
 /* float */
 .clearfix:after{content:'';display:table;clear:both;}
-.fl_l{float:left;}
-.fl_r{float:right;}
+.fl_l{float:left !important;}
+.fl_r{float:right !important;}
 
 /* font */
-.txt_blue{color:#345FF9}
-.txt_red{color:#F44462}
+.txt_blue{color:#345FF9 !important;}
+.txt_red{color:#F44462 !important;}

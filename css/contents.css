@@ -27,12 +27,12 @@
 .btn_cancel{padding: 0px 40px;border: none;background: #818898;box-shadow: 0px 4px 20px rgba(115, 115, 115, 0.3);border-radius: 8px;outline: 0;}
 .btn_cancel:hover{background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #818898;}
 .btn_cancel span{font-size:16px;color:#fff;line-height: 44px;}
-.btn_custom01{padding: 0px 40px;border: none;border:1px solid #BDBDBD; background: #FFFFFF;filter: drop-shadow(0px 4px 20px rgba(115, 115, 115, 0.3));border-radius: 8px;outline: 0;}
+.btn_custom01{padding: 0px 40px;border: none;border:1px solid #BDBDBD; background: #FFFFFF;box-shadow: 0px 4px 20px rgba(115, 115, 115, 0.3);border-radius: 8px;outline: 0;}
 .btn_custom01 span{font-size:16px;color:#545557;line-height: 44px;}
 .btn_custom01:hover span{color:#345FF9;}
-.btn_custom02{padding: 0px 9px;border: none;background: #83879F;border-radius: 4px;outline: 0;}
-.btn_custom02:hover{background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #83879F;}
+.btn_custom02{padding: 0px 9px;border: none;background: #83879F;border-radius: 4px;outline: 0;box-shadow: 0px 4px 20px rgba(115, 115, 115, 0.3);}
 .btn_custom02 span{font-size:14px;color:#fff;line-height: 34px;}
+.btn_custom02:hover{background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #83879F;}
 .btn_download{padding: 0px 22px 0px 42px;border: none;background: #455BA9 url(../images/contents/ico_download.png) no-repeat left 22px center;border-radius: 8px;outline: 0;}
 .btn_download:hover{background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #455BA9  url(../images/contents/ico_download.png) no-repeat left 22px center;}
 .btn_download span{font-size:14px;color:#fff;line-height: 34px;}
@@ -164,7 +164,7 @@ textarea{display:inline-block;width:100%;height:80px;border:1px solid #D4D8DB;ba
 .member_area ul{float: right;border-radius: 5px;background: #F0F2F8;}
 .member_area ul li{float:left;}
 .member_area ul li a{display:inline-block;width:35px;height:35px;}
-.member_area ul li a span{text-indent:-9999px;font-size: 0;}
+.member_area ul li a span{display:inline-block;text-indent:-9999px;font-size: 0;}
 .member_area ul li .btn_list{background:url(../images/contents/ico_list_off.png) center center no-repeat;}
 .member_area ul li .btn_list.on{background:url(../images/contents/ico_list_on.png) center center no-repeat;}
 .member_area ul li .btn_card{background:url(../images/contents/ico_card_off.png) center center no-repeat;}
@@ -173,21 +173,30 @@ textarea{display:inline-block;width:100%;height:80px;border:1px solid #D4D8DB;ba
 /* tbl_wrap */
 .tbl_wrap{position:relative;margin-top: 30px;}
 .tbl_wrap .txt_essen{position:absolute;top:-40px;right:0;color:#F44462;}
-.tbl_wrap table{width:100%;border-top:2px solid #444444;border-left:1px solid #D4D8DB;}
-.tbl_wrap table th{width:190px;height:60px;border-right:1px solid #D4D8DB;border-bottom:1px solid #D4D8DB;background: #FAFBFC;padding:17px 36px;text-align:left;vertical-align:top;}
+.tbl_wrap.first_colspan table{table-layout: auto;} 
+.tbl_wrap table{width:100%;border-top:2px solid #444444;}
+.tbl_wrap table th{width:190px;min-height:60px;border-left:1px solid #D4D8DB;border-bottom:1px solid #D4D8DB;background: #FAFBFC;padding:17px 36px;text-align:left;vertical-align:top;}
+.tbl_wrap table th:first-child{border-left:none;}
 .tbl_wrap table th .essen{margin-left: 5px;color:#F44462;}
-.tbl_wrap table td{border-right:1px solid #D4D8DB;border-bottom:1px solid #D4D8DB;padding:11px 36px;vertical-align:middle;}
+.tbl_wrap table td{min-height:60px;border-left:1px solid #D4D8DB;border-bottom:1px solid #D4D8DB;padding:10px 36px;vertical-align:middle;}
+.tbl_wrap table td .line_2nd{clear:both;margin-top: 10px;}
 .tbl_wrap table td .input{display:inline-block;width:70%;}
 .tbl_wrap table td .input + button{margin-left:10px;}
 .tbl_wrap table td .input_cal{position:relative;display:inline-block;width:50%;height:38px;border:1px solid #D4D8DB;background: #fff;border-radius: 4px;padding:0 16px;}
 .tbl_wrap table td .input_cal .cal_date{display:inline-block;line-height:38px;}
 .tbl_wrap table td .input_cal .ico_cal{position:absolute;top:6px;right:6px;display:inline-block;width:24px;height:24px;background:#fff url(../images/contents/ico_cal.png) center center no-repeat;text-indent:-9999px;}
 .tbl_wrap table td .cal_sel{display:inline-block;width:30%;margin-left: 10px;vertical-align:top;}
-.tbl_wrap table td .file_list .ico_file{display:inline-block;width:24px;height:24px;background:url(../images/contents/ico_s_file.png) center center no-repeat;text-indent:-9999px;}
-.tbl_wrap table td .file_list div{margin-top: 10px;}
+.tbl_wrap table td .file_list div{display:table;margin-top: 10px;}
 .tbl_wrap table td .file_list.nobtn div:first-of-type{margin-top: 0;}
-.tbl_wrap table td .file_list span{color:#666;}
-.tbl_wrap table td .file_list .btn_del{color:#818898;background:url(../images/contents/ico_del.png) center right no-repeat;padding-right: 22px;margin-left:20px;}
+.tbl_wrap table td .file_list span{display:table-cell;color:#666;padding-left:10px;vertical-align:middle;}
+.tbl_wrap table td .file_list .btn_custom02 span{color:#fff;padding: 0;vertical-align: baseline;}
+.tbl_wrap table td .file_list .ico_file{display:table-cell;width:24px;height:24px;background:url(../images/contents/ico_s_file.png) center center no-repeat;text-indent:-9999px;}
+.tbl_wrap table td .file_list .btn_del{display:table-cell;color:#818898;background:url(../images/contents/ico_del.png) center right no-repeat;padding:0 22px 0 20px;}
+.tbl_wrap table td .file_list img{display:table-cell;vertical-align:middle;}
+.tbl_wrap table td .file_list.img_file{margin-top: -10px;display:flow-root;}
+.tbl_wrap table td .file_list.img_file div{float:left;margin-right: 30px;}
+.tbl_wrap table td .file_list.img_file.modify .img_area{position:relative;padding-left: 0;}
+.tbl_wrap table td .file_list.img_file.modify .img_area:before{content: '';display:block;position:absolute;bottom:0;right:0;width:20px;height:20px;background:url(../images/contents/ico_del02.png) center center no-repeat;cursor: pointer;}
 
 /* tbl_st_wrap */
 .tbl_st_wrap{position:relative;margin-top: 30px;}
@@ -322,3 +331,9 @@ body.noscl{overflow: hidden;}
 .modal_tbl_detail table{border-left: none;}
 .modal_tbl_detail table td{text-align: left;padding: 0 20px;}
 .modal_tbl_detail table td:last-of-type{border-right: none;}
+
+
+/* only IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .main_list_wrap .list_cont .title_area .num .gra{background: none;color:#455BA9;}    
+}
