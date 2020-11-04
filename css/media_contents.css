@@ -7,7 +7,7 @@
 /* tbl_wrap */
 .tbl_wrap table tr{display:block;}
 .tbl_wrap table th{display:block;width:100%;border-left:none;}
-.tbl_wrap table td{display:block;border-left:none;line-height: 38px;}
+.tbl_wrap table td{display:block;width:100%;border-left:none;line-height: 38px;}
 
 /* horizontal */
 .tbl_wrap.horizontal table tr{display:block;position:relative;border-bottom: 1px solid #D4D8DB;padding: 10px;}

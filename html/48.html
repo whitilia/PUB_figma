@@ -173,47 +173,30 @@
                 <div class="content_wrap">
 
                     <!-- title 영역 시작 -->
-                    <h3 class="title">업무연락방 가입신청</h3>
+                    <h3 class="title">공용회의실 예약 - 신청</h3>
                     <!-- //title 영역 끝 -->
 
                     <!-- tbl_wrap 시작 -->
-                    <p class="subtit">방정보</p>
+                    <p class="subtit">회의실 정보</p>
                     <div class="tbl_wrap">
                         <table>
                             <tbody>
                                 <tr>
-                                    <th>업무연락방</th>
-                                    <td>업무연락방 명</td>
-                                </tr>
-                                <tr>
-                                    <th>개설일</th>
-                                    <td>2020-08-13</td>
-                                </tr>
-                                <tr>
-                                    <th>회원수</th>
-                                    <td>2명</td>
-                                </tr>
-                                <tr>
-                                    <th>소개</th>
-                                    <td>업무연락방 소개글</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p class="subtit">방장</p>
-                    <div class="tbl_wrap">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th>방장</th>
-                                    <td>홍길동</td>
+                                    <th>회의실명</th>
+                                    <td>12동 101호(대)</td>
                                     <th>부서</th>
                                     <td>정보관리담당관 IT지원센터(행정정보)</td>
                                 </tr>
                                 <tr>
-                                    <th>내선번호</th>
-                                    <td>044-123-1234</td>
-                                    <th>이메일</th>
+                                    <th>기관명</th>
+                                    <td>산업통상자원부(13-1동)</td>
+                                    <th>본/지사명</th>
+                                    <td>본부</td>
+                                </tr>
+                                <tr>
+                                    <th>담당자(연락처)</th>
+                                    <td>홍길동(044-203-1234)</td>
+                                    <th>좌석배치도</th>
                                     <td>
                                         <div class="file_list img_file">
                                             <div>
@@ -234,21 +217,163 @@
                             </tbody>
                         </table>
                     </div>
-                    <p class="subtit">담당자</p>
+                    <p class="subtit">회의실 예약 신청</p>
+                    <div class="tbl_wrap first_colspan">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>예약일자<strong class="essen">*</strong></th>
+                                    <td colspan="3">
+                                        <span class="input_cal02">
+                                            <span class="cal_date">2020.09.11</span>
+                                            <a href="#none" class="ico_cal">달력</a>
+                                        </span>
+                                        <span class="txt_wave">~</span>
+                                        <span class="input_cal02">
+                                            <span class="cal_date">2020.09.11</span>
+                                            <a href="#none" class="ico_cal">달력</a>
+                                        </span>
+                                        <button class="btn_custom02"><span>예약가능시간 보기</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이용시간<strong class="essen">*</strong></th>
+                                    <td colspan="3">
+                                        <span class="cal_sel w_140">
+                                            <select id="sel">
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                            </select>
+                                        </span>
+                                        <span class="cal_sel w_140">
+                                            <select id="sel">
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                            </select>
+                                        </span>
+                                        <span class="txt_wave">~</span>
+                                        <span class="cal_sel w_140">
+                                            <select id="sel">
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                            </select>
+                                        </span>
+                                        <span class="cal_sel w_140">
+                                            <select id="sel">
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                                <option>14시</option>
+                                            </select>
+                                        </span>
+                                        <button class="btn_custom02"><span>중복확인</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이용목적<strong class="essen">*</strong></th>
+                                    <td colspan="3">
+                                        <span class="input w_100p">
+                                            <input type="text" placeholder="">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>신청자명<strong class="essen">*</strong></th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="">
+                                        </span>
+                                    </td>
+                                    <th>연락처</th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>기타 요청사항</th>
+                                    <td colspan="3">
+                                        <span class="input w_100p">
+                                            <input type="text" placeholder="">
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="subtit">이용가능 설비 신청</p>
                     <div class="tbl_wrap">
                         <table>
                             <tbody>
                                 <tr>
-                                    <th>방장</th>
-                                    <td>김담당</td>
-                                    <th>부서</th>
-                                    <td>정보관리담당관 IT지원센터(행정정보)</td>
+                                    <th>빔프로젝트</th>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo01_01" name="rdo_cont01">
+                                            <label for="rdo01_01"><span></span>신청</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo01_02" name="rdo_cont01">
+                                            <label for="rdo01_02"><span></span>미신청</label> 
+                                        </div>
+                                    </td>
+                                    <th>마이크 (개수)</th>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo02_01" name="rdo_cont02">
+                                            <label for="rdo02_01"><span></span>신청</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo02_02" name="rdo_cont02">
+                                            <label for="rdo02_02"><span></span>미신청</label> 
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <th>내선번호</th>
-                                    <td>044-123-1234</td>
-                                    <th>이메일</th>
-                                    <td>hkd@mke.go.kr</td>
+                                    <th>컴퓨터</th>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo03_01" name="rdo_cont03">
+                                            <label for="rdo03_01"><span></span>신청</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo03_02" name="rdo_cont03">
+                                            <label for="rdo03_02"><span></span>미신청</label> 
+                                        </div>
+                                    </td>
+                                    <th>인터넷</th>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo04_01" name="rdo_cont04">
+                                            <label for="rdo04_01"><span></span>신청</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo04_02" name="rdo_cont04">
+                                            <label for="rdo04_02"><span></span>미신청</label> 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>화이트보드</th>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo05_01" name="rdo_cont05">
+                                            <label for="rdo05_01"><span></span>신청</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo05_02" name="rdo_cont05">
+                                            <label for="rdo05_02"><span></span>미신청</label> 
+                                        </div>
+                                    </td>
+                                    <th>기타 사용가능 설비</th>
+                                    <td>없음</td>
                                 </tr>
                             </tbody>
                         </table>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ko"> 
 <head> 
 <meta charset="UTF-8"> 
@@ -173,158 +173,200 @@
                 <div class="content_wrap">
                     
                     <!-- title 영역 시작 -->
-                    <h3 class="title">산하기관 연락방</h3>
-                    <p class="subtit">게시글 등록하기</p>
+                    <h3 class="title">가입 회원관리</h3>
                     <!-- //title 영역 끝 -->
-
-                    <!-- tbl_wrap 시작 -->
-                    <div class="tbl_wrap">
+                    <div class="sort_wrap">
+                        <ul>
+                            <li class="w_50p">
+                                <div class="sort_cont w_100p">
+                                    <select id="sel">
+                                        <option>내가 방장인 업무연락방 시스템</option>
+                                        <option>내용</option>
+                                        <option>작성자</option>
+                                        <option>날짜</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="member_area mt_60">
+                        <dl class="master">
+                            <dt>방장</dt>
+                            <dd>홍길동</dd>
+                        </dl>
+                        <dl>
+                            <dt>업무연락방</dt>
+                            <dd>이름이 들어갑니다</dd>
+                        </dl>
+                    </div>
+                    <div class="search_wrap">
+                        <div class="count_area fl_l" style="margin-top: 10px;">
+                            <span>전체 <em class="txt_red">11</em>건 <em class="txt_gray">(1/4페이지)</em></span>
+                        </div>
+                        <div class="fl_r">
+                            <span class="select">
+                                <select id="sel">
+                                    <option>제목</option>
+                                    <option>내용</option>
+                                    <option>작성자작성자</option>
+                                    <option>날짜</option>
+                                </select>
+                            </span>
+                            <span class="input">
+                                <input type="text" placeholder="">
+                            </span>
+                            <a href="#none" class="btn_search">검색</a>
+                        </div>
+                    </div>
+                    <div class="tbl_wrap horizontal hori_chk hori02_center flex02">
                         <table>
+                            <thead>
+                                <tr>
+                                    <th>선택</th>
+                                    <th>기관명</th>
+                                    <th>부서</th>
+                                    <th>이름</th>
+                                    <th>직급</th>
+                                    <th>전화번호</th>
+                                    <th>신청일자</th>
+                                    <th>회원상태</th>
+                                </tr>
+                            </thead>
                             <tbody>
                                 <tr>
-                                    <th>제목<strong class="essen">*</strong></th>
-                                    <td>
-                                        <span class="input">
-                                            <input type="text" placeholder="">
-                                        </span>
-                                    </td>
-                                    <th>분류</th>
-                                    <td>
-                                        <div class="style_rdo">
-                                            <input type="radio" checked="checked" id="rdo01_01" name="rdo_cont01">
-                                            <label for="rdo01_01"><span></span>공지</label> 
-                                        </div>
-                                        <div class="style_rdo">
-                                            <input type="radio" id="rdo01_02" name="rdo_cont01">
-                                            <label for="rdo01_02"><span></span>제출</label> 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>작성일</th>
-                                    <td>
-                                        <span class="input_cal">
-                                            <span class="cal_date">2020.09.11</span>
-                                            <a href="#none" class="ico_cal">달력</a>
-                                        </span>
-                                    </td>
-                                    <th>제출기간</th>
-                                    <td>
-                                        <span class="input_cal">
-                                            <span class="cal_date">2020.09.11</span>
-                                            <a href="#none" class="ico_cal">달력</a>
-                                        </span>
-                                        <span class="cal_sel">
-                                            <select id="sel">
-                                                <option>14시</option>
-                                                <option>14시</option>
-                                                <option>14시</option>
-                                                <option>14시</option>
-                                            </select>
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>알림</th>
-                                    <td>
-                                        <div class="style_rdo">
-                                            <input type="radio" checked="checked" id="rdo02_01" name="rdo_cont02">
-                                            <label for="rdo02_01"><span></span>전체</label> 
-                                        </div>
-                                        <div class="style_rdo">
-                                            <input type="radio" id="rdo02_02" name="rdo_cont02">
-                                            <label for="rdo02_02"><span></span>알림없음</label> 
-                                        </div>
-                                        <div class="style_rdo">
-                                            <input type="radio" id="rdo02_03" name="rdo_cont02">
-                                            <label for="rdo02_03"><span></span>E-mail</label> 
-                                        </div>
-                                        <div class="style_rdo">
-                                            <input type="radio" id="rdo02_04" name="rdo_cont02">
-                                            <label for="rdo02_04"><span></span>SMS</label> 
-                                        </div>
-                                    </td>
-                                    <th>제출방법</th>
-                                    <td>
-                                        <div class="style_rdo">
-                                            <input type="radio" checked="checked" id="rdo03_01" name="rdo_cont03">
-                                            <label for="rdo03_01"><span></span>댓글</label> 
-                                        </div>
-                                        <div class="style_rdo">
-                                            <input type="radio" id="rdo03_02" name="rdo_cont03">
-                                            <label for="rdo03_02"><span></span>E-mail</label> 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>담당기관</th>
-                                    <td>
-                                        <span class="input">
-                                            <input type="text" placeholder="" value="IT지원센터외 16곳">
-                                        </span>
-                                        <button class="btn_custom02"><span>기관조회</span></button>
-                                    </td>
-                                    <th>댓글알림</th>
                                     <td>
                                         <div class="style_chk">
                                             <input type="checkbox" checked="checked" id="chk01">
-                                            <label for="chk01"><span></span>SMS</label> 
+                                            <label for="chk01"><span></span></label> 
                                         </div>
+                                    </td>
+                                    <td>한국석유공사</td>
+                                    <td>IT지원센터</td>
+                                    <td>홍길동</td>
+                                    <td>대표</td>
+                                    <td>010-1234-1234</td>
+                                    <td>2020-06-12</td>
+                                    <td><span class="tag blue">미운영</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <div class="style_chk">
                                             <input type="checkbox" id="chk02">
-                                            <label for="chk02"><span></span>쪽지</label> 
+                                            <label for="chk02"><span></span></label> 
                                         </div>
                                     </td>
+                                    <td>한국석유공사</td>
+                                    <td>IT지원센터</td>
+                                    <td>홍길동</td>
+                                    <td>대표</td>
+                                    <td>010-1234-1234</td>
+                                    <td>2020-06-12</td>
+                                    <td><span class="tag navy">미운영</span></td>
                                 </tr>
                                 <tr>
-                                    <th>내용</th>
-                                    <td colspan='3'>
-                                        <span class="textarea">
-                                            <textarea name="" id="" cols="30" rows="10" placeholder="20일까지 자료 제출 해주세요."></textarea>
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>첨부파일</th>
-                                    <td colspan='3'>
-                                        <button class="btn_custom02"><span>파일선택</span></button>
-                                        <div class="file_list">
-                                            <div>
-                                                <em class="ico_file">파일아이콘</em>
-                                                <span>[공문] 연락방 신태조사.hwp</span>
-                                                <a href="#none" class="btn_del">삭제</a>
-                                            </div>
-                                            <div>
-                                                <em class="ico_file">파일아이콘</em>
-                                                <span>[공문] 연락방 신태조사.hwp</span>
-                                                <a href="#none" class="btn_del">삭제</a>
-                                            </div>
+                                    <td>
+                                        <div class="style_chk">
+                                            <input type="checkbox" id="chk03">
+                                            <label for="chk03"><span></span></label> 
                                         </div>
                                     </td>
+                                    <td>한국석유공사</td>
+                                    <td>IT지원센터</td>
+                                    <td>홍길동</td>
+                                    <td>대표</td>
+                                    <td>010-1234-1234</td>
+                                    <td>2020-06-12</td>
+                                    <td><span class="tag org">미운영</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="style_chk">
+                                            <input type="checkbox" id="chk04">
+                                            <label for="chk04"><span></span></label> 
+                                        </div>
+                                    </td>
+                                    <td>한국석유공사</td>
+                                    <td>IT지원센터</td>
+                                    <td>홍길동</td>
+                                    <td>대표</td>
+                                    <td>010-1234-1234</td>
+                                    <td>2020-06-12</td>
+                                    <td><span class="tag red">미운영</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="style_chk">
+                                            <input type="checkbox" id="chk05">
+                                            <label for="chk05"><span></span></label> 
+                                        </div>
+                                    </td>
+                                    <td>한국석유공사</td>
+                                    <td>IT지원센터</td>
+                                    <td>홍길동</td>
+                                    <td>대표</td>
+                                    <td>010-1234-1234</td>
+                                    <td>2020-06-12</td>
+                                    <td><span class="tag navy">미운영</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="style_chk">
+                                            <input type="checkbox" id="chk06">
+                                            <label for="chk06"><span></span></label> 
+                                        </div>
+                                    </td>
+                                    <td>한국석유공사</td>
+                                    <td>IT지원센터</td>
+                                    <td>홍길동</td>
+                                    <td>대표</td>
+                                    <td>010-1234-1234</td>
+                                    <td>2020-06-12</td>
+                                    <td><span class="tag navy">미운영</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="style_chk">
+                                            <input type="checkbox" id="chk07">
+                                            <label for="chk07"><span></span></label> 
+                                        </div>
+                                    </td>
+                                    <td>한국석유공사</td>
+                                    <td>IT지원센터</td>
+                                    <td>홍길동</td>
+                                    <td>대표</td>
+                                    <td>010-1234-1234</td>
+                                    <td>2020-06-12</td>
+                                    <td><span class="tag navy">미운영</span></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <!-- tbl_wrap 끝 -->
-
-                    <!-- 버튼 시작 -->
+                    <div class="comp_paging">
+                        <a href="#none"><span class="prev02">맨앞으로</span></a>
+                        <a href="#none"><span class="prev01">이전</span></a>
+                        <a href="#none"><span>1</span></a>
+                        <a href="#none"><span>2</span></a>
+                        <a href="#none"><span>3</span></a>
+                        <a href="#none"><span>4</span></a>
+                        <a href="#none"><span class="next01">다음</span></a>
+                        <a href="#none"><span class="next02">맨마지막으로</span></a>
+                    </div>
                     <div class="btn_area clearfix">
                         <div class="fl_l">
-                            <button class="btn_custom01"><span>목록</span></button>
+                            <button class="btn_excel"><span>엑셀다운로드</span></button>
                         </div>
                         <div class="fl_r">
-                            <button class="btn_modify"><span>저장</span></button>
+                            <button class="btn_cancel"><span>가입해지</span></button>
+                            <button class="btn_confirm"><span>담당자 지정</span></button>
                         </div>
                     </div>
-                    <!-- //버튼 끝 -->
-
                 </div>
                 <!-- //contents -->
             </div>
         </div>
-        <!-- container -->
-        <!-- footer, mobile -->
-        <div class="footer mobile">
+        <!-- //container -->
+         <!-- footer, mobile -->
+         <div class="footer mobile">
             <address>(우) 30118 세종특별자치시 한누리대로 402 12동, 13동 산업통상자원부</address>
             <div class="copy">COPYRIGHT © 2016 산업통상자원부.<span class="br"></span>All Rights Reserved.</div>
         </div>
