@@ -10,7 +10,7 @@
 <script src="../js/jquery-3.5.1.min.js"></script> 
 <script src="../js/content.js"></script> 
 </head>
-<body class="noscl"> <!-- 모달 팝업 생성 시 클래스 추가 -->
+<body>
     <div class="wrap">
         <!-- header -->
         <div class="header">
@@ -169,54 +169,115 @@
             </div>
             <!-- //lnb -->
             <div class="contents">
+                <!-- contents -->
+                <div class="content_wrap">
+
+                    <!-- title 영역 시작 -->
+                    <h3 class="title">업무연락방 가입신청</h3>
+                    <!-- //title 영역 끝 -->
+
+                    <!-- tbl_wrap 시작 -->
+                    <p class="subtit">방정보</p>
+                    <div class="tbl_wrap">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>업무연락방</th>
+                                    <td>업무연락방 명</td>
+                                </tr>
+                                <tr>
+                                    <th>개설일</th>
+                                    <td>2020-08-13</td>
+                                </tr>
+                                <tr>
+                                    <th>회원수</th>
+                                    <td>2명</td>
+                                </tr>
+                                <tr>
+                                    <th>소개</th>
+                                    <td>업무연락방 소개글</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="subtit">방장</p>
+                    <div class="tbl_wrap">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>방장</th>
+                                    <td>홍길동</td>
+                                    <th>부서</th>
+                                    <td>정보관리담당관 IT지원센터(행정정보)</td>
+                                </tr>
+                                <tr>
+                                    <th>내선번호</th>
+                                    <td>044-123-1234</td>
+                                    <th>이메일</th>
+                                    <td>
+                                        <div class="file_list img_file">
+                                            <div>
+                                                <img src="../images/contents/img_file.png" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="../images/contents/img_file.png" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="../images/contents/img_file.png" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="../images/contents/img_file.png" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="subtit">담당자</p>
+                    <div class="tbl_wrap">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>방장</th>
+                                    <td>김담당</td>
+                                    <th>부서</th>
+                                    <td>정보관리담당관 IT지원센터(행정정보)</td>
+                                </tr>
+                                <tr>
+                                    <th>내선번호</th>
+                                    <td>044-123-1234</td>
+                                    <th>이메일</th>
+                                    <td>hkd@mke.go.kr</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- tbl_wrap 끝 -->
+
+                    <!-- 버튼 시작 -->
+                    <div class="btn_area clearfix">
+                        <div class="fl_l">
+                            <button class="btn_custom01"><span>목록</span></button>
+                        </div>
+                        <div class="fl_r">
+                            <button class="btn_modify"><span>가입신청</span></button>
+                        </div>
+                    </div>
+                    <!-- //버튼 끝 -->
+
+                </div>
+                <!-- //contents -->
             </div>
         </div>
-        <!-- container -->
-        <!-- footer, mobile -->
-        <div class="footer mobile">
+        <!-- //container -->
+         <!-- footer, mobile -->
+         <div class="footer mobile">
             <address>(우) 30118 세종특별자치시 한누리대로 402 12동, 13동 산업통상자원부</address>
             <div class="copy">COPYRIGHT © 2016 산업통상자원부.<span class="br"></span>All Rights Reserved.</div>
         </div>
         <!-- //footer, mobile -->
     </div>
-
-    <!-- POPUP -->
-    <div class="modal_wrap">
-        <div class="modal_dimmed"></div>
-        <div class="madal" style="margin-top:-196px;"><!-- 팝업 height의 절반값 음수로 margin-top 추가 -->
-            <a href="#none" class="btn_close"></a>
-            <h3 class="title">예약가능 시간</h3>
-            <div class="modal_content">
-                <div class="table">
-                    <table>
-                        <colgroup>
-                            <col width="50%"/>
-                            <col width=""/>
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>날짜</th>
-                                <th>시간</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2020-08-14</td>
-                                <td>07:00 ~ 20:00</td>
-                            </tr>
-                            <tr>
-                                <td>2020-08-14</td>
-                                <td>07:00 ~ 20:00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="btn_area btn_center">
-                <button class="btn_custom01"><span>닫기</span></button>
-            </div>
-        </div>
-    </div>
-    <!-- //POPUP -->
 </body>
+
 </html>
