@@ -48,7 +48,7 @@
 .btn_excel{padding: 0px 22px 0px 42px;border: none;background: #455BA9 url(../images/contents/ico_excel.png) no-repeat left 22px center;border-radius: 8px;outline: 0;}
 .btn_excel:hover{background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #455BA9 url(../images/contents/ico_excel.png) no-repeat left 22px center;}
 .btn_excel span{font-size:14px;color:#fff;line-height: 34px;}
-.btn_search{display:inline-block;line-height:48px;padding:0 35px;font-size:14px;color:#fff;background:#818898;text-align:center;vertical-align: top;}
+a.btn_search{display:inline-block;line-height:48px;padding:0 35px;font-size:14px;color:#fff;background:#818898;text-align:center;vertical-align: top;}
 .btn_custom_L{padding: 0px 22px;}
 
 /* 페이징 */
