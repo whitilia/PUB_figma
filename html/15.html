@@ -171,136 +171,104 @@
             <div class="contents">
                 <!-- contents -->
                 <div class="content_wrap">
-                    <h3 class="title">공용회의실 정보관리</h3>
-                    <div class="sort_wrap">
-                        <ul>
-                            <li>
-                                <span class="sort_tit">기관구분</span>
-                                <div class="sort_cont">
-                                    <div class="style_rdo">
-                                        <input type="radio" checked="checked" id="rdo01" name="rdo">
-                                        <label for="rdo01"><span></span>공직유관단체</label> 
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="sort_tit">기관명</span>
-                                <div class="sort_cont w_150">
-                                    <select id="sel">
-                                        <option>선택</option>
-                                        <option>내용</option>
-                                        <option>작성자</option>
-                                        <option>날짜</option>
-                                    </select>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="sort_tit">운영여부</span>
-                                <div class="sort_cont w_150">
-                                    <select id="sel">
-                                        <option>선택</option>
-                                        <option>내용</option>
-                                        <option>작성자</option>
-                                        <option>날짜</option>
-                                    </select>
-                                </div>
-                                <a href="#none" class="btn_search">확인</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tbl_wrap horizontal hori02 flex02">
+                    <h3 class="title">개인정보</h3>
+                    <h4 class="subtit_double_chk">기관정보</h4>
+                    <div class="tbl_wrap first_colspan"><!-- 첫째줄에 colspan이 들어가면 first_colspan 클래스 추가 -->
+                        <span class="txt_essen">* 입력필수</span>
                         <table>
-                            <thead>
-                                <tr>
-                                    <th>번호</th>
-                                    <th>기관명</th>
-                                    <th>본/지사명</th>
-                                    <th>회의실명</th>
-                                    <th>담당자</th>
-                                    <th>연락처</th>
-                                    <th>운영여부</th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
-                                    <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag gray">미운영</span></td>
+                                    <th>기관명<strong class="essen">*</strong></th>
+                                    <td colspan="3">
+                                        <span class="input">
+                                            <input type="text" placeholder="" readonly="readonly" value="IT지원센터 4">
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
-                                    <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag gray">미운영</span></td>
+                                    <th>근무부서<strong class="essen">*</strong></th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="" value="지원부서">
+                                        </span>
+                                    </td>
+                                    <th>직(급) 위</th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="" value="대리">
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
-                                    <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag org">운영</span></td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
-                                    <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag org">운영</span></td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
-                                    <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag org">운영</span></td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
-                                    <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag org">운영</span></td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
-                                    <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag org">운영</span></td>
+                                    <th>내선번호<strong class="essen">*</strong></th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="예) 044-123-4567" value="">
+                                        </span>
+                                    </td>
+                                    <th>팩스번호</th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="예) 044-123-4567" value="">
+                                        </span>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="comp_paging">
-                        <a href="#none"><span class="prev02">맨앞으로</span></a>
-                        <a href="#none"><span class="prev01">이전</span></a>
-                        <a href="#none"><span>1</span></a>
-                        <a href="#none"><span>2</span></a>
-                        <a href="#none"><span>3</span></a>
-                        <a href="#none"><span>4</span></a>
-                        <a href="#none"><span class="next01">다음</span></a>
-                        <a href="#none"><span class="next02">맨마지막으로</span></a>
+                    <h4 class="subtit_double_chk">사용자정보</h4>
+                    <div class="tbl_wrap">
+                        <span class="txt_essen">* 입력필수</span>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>아이디<strong class="essen">*</strong></th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="" readonly="readonly" value="honggildong">
+                                        </span>
+                                    </td>
+                                    <th>성명<strong class="essen">*</strong></th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="" readonly="readonly" value="홍길동">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호<strong class="essen">*</strong></th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="" value="">
+                                        </span>
+                                    </td>
+                                    <th>성명<strong class="essen">*</strong></th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="" value="">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>휴대폰<strong class="essen">*</strong></th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="예) 010-1234-4567" value="">
+                                        </span>
+                                    </td>
+                                    <th>E-mail<strong class="essen">*</strong></th>
+                                    <td>
+                                        <span class="input">
+                                            <input type="text" placeholder="test@naver.com" value="">
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="btn_area clearfix">
                         <div class="fl_r">
-                            <button class="btn_modify"><span>등록</span></button>
+                            <button class="btn_modify"><span>저장</span></button>
                         </div>
                     </div>
                 </div>

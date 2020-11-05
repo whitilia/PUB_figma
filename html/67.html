@@ -175,115 +175,172 @@
                     <div class="sort_wrap">
                         <ul>
                             <li>
-                                <span class="sort_tit">기관구분</span>
-                                <div class="sort_cont">
+                                <span class="sort_tit">이용자</span>
+                                <div class="sort_cont w_150">
+                                    <span class="input">
+                                        <input type="text" placeholder="" value="">
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="sort_tit">사용권한</span>
+                                <div class="sort_cont sort_rdo_cont">
                                     <div class="style_rdo">
-                                        <input type="radio" checked="checked" id="rdo01" name="rdo">
-                                        <label for="rdo01"><span></span>공직유관단체</label> 
+                                        <input type="radio" checked="checked" id="rdo01" name="rdo01">
+                                        <label for="rdo01"><span></span>전체</label> 
+                                    </div>
+                                    <div class="style_rdo">
+                                        <input type="radio" id="rdo02" name="rdo01">
+                                        <label for="rdo02"><span></span>관리자</label> 
+                                    </div>
+                                    <div class="style_rdo">
+                                        <input type="radio" id="rdo03" name="rdo01">
+                                        <label for="rdo03"><span></span>일반사용자</label> 
                                     </div>
                                 </div>
-                            </li>
-                            <li>
-                                <span class="sort_tit">기관명</span>
-                                <div class="sort_cont w_150">
-                                    <select id="sel">
-                                        <option>선택</option>
-                                        <option>내용</option>
-                                        <option>작성자</option>
-                                        <option>날짜</option>
-                                    </select>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="sort_tit">운영여부</span>
-                                <div class="sort_cont w_150">
-                                    <select id="sel">
-                                        <option>선택</option>
-                                        <option>내용</option>
-                                        <option>작성자</option>
-                                        <option>날짜</option>
-                                    </select>
-                                </div>
-                                <a href="#none" class="btn_search">확인</a>
+                                <a href="#none" class="btn_search">검색</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="tbl_wrap horizontal hori02 flex02">
+                    <div class="tbl_wrap horizontal hori04 hori06">
                         <table>
                             <thead>
                                 <tr>
                                     <th>번호</th>
+                                    <th>이용자명</th>
+                                    <th>이용자ID</th>
                                     <th>기관명</th>
-                                    <th>본/지사명</th>
-                                    <th>회의실명</th>
-                                    <th>담당자</th>
-                                    <th>연락처</th>
-                                    <th>운영여부</th>
+                                    <th>부서명</th>
+                                    <th>사용권한</th>
+                                    <th>적용여부</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
                                     <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag gray">미운영</span></td>
+                                    <td>test001</td>
+                                    <td>IT지원센터</td>
+                                    <td>IT지원센터</td>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo01_01" name="rdo_cont01">
+                                            <label for="rdo01_01"><span></span>관리자</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo01_02" name="rdo_cont01">
+                                            <label for="rdo01_02"><span></span>일반사용자</label> 
+                                        </div>
+                                    </td>
+                                    <td><button class="btn_custom03 btn_custom_L"><span>적용</span></button></td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
+                                    <td>2</td>
                                     <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag gray">미운영</span></td>
+                                    <td>test001</td>
+                                    <td>IT지원센터</td>
+                                    <td>IT지원센터</td>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo02_01" name="rdo_cont02">
+                                            <label for="rdo02_01"><span></span>관리자</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo02_02" name="rdo_cont02">
+                                            <label for="rdo02_02"><span></span>일반사용자</label> 
+                                        </div>
+                                    </td>
+                                    <td><button class="btn_custom03 btn_custom_L"><span>적용</span></button></td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
+                                    <td>3</td>
                                     <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag org">운영</span></td>
+                                    <td>test001</td>
+                                    <td>IT지원센터</td>
+                                    <td>IT지원센터</td>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo03_01" name="rdo_cont03">
+                                            <label for="rdo03_01"><span></span>관리자</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo03_02" name="rdo_cont03">
+                                            <label for="rdo03_02"><span></span>일반사용자</label> 
+                                        </div>
+                                    </td>
+                                    <td><button class="btn_custom03 btn_custom_L"><span>적용</span></button></td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
+                                    <td>4</td>
                                     <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag org">운영</span></td>
+                                    <td>test001</td>
+                                    <td>IT지원센터</td>
+                                    <td>IT지원센터</td>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo04_01" name="rdo_cont04">
+                                            <label for="rdo04_01"><span></span>관리자</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo04_02" name="rdo_cont04">
+                                            <label for="rdo04_02"><span></span>일반사용자</label> 
+                                        </div>
+                                    </td>
+                                    <td><button class="btn_custom03 btn_custom_L"><span>적용</span></button></td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
+                                    <td>5</td>
                                     <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag org">운영</span></td>
+                                    <td>test001</td>
+                                    <td>IT지원센터</td>
+                                    <td>IT지원센터</td>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo05_01" name="rdo_cont05">
+                                            <label for="rdo05_01"><span></span>관리자</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo05_02" name="rdo_cont05">
+                                            <label for="rdo05_02"><span></span>일반사용자</label> 
+                                        </div>
+                                    </td>
+                                    <td><button class="btn_custom03 btn_custom_L"><span>적용</span></button></td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
+                                    <td>6</td>
                                     <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag org">운영</span></td>
+                                    <td>test001</td>
+                                    <td>IT지원센터</td>
+                                    <td>IT지원센터</td>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo06_01" name="rdo_cont06">
+                                            <label for="rdo06_01"><span></span>관리자</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo06_02" name="rdo_cont06">
+                                            <label for="rdo06_02"><span></span>일반사용자</label> 
+                                        </div>
+                                    </td>
+                                    <td><button class="btn_custom03 btn_custom_L"><span>적용</span></button></td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>IT 지원센터</td>
-                                    <td>본부</td>
-                                    <td><a href="#none">대회의실</a></td>
+                                    <td>7</td>
                                     <td>김담당</td>
-                                    <td>010-1234-1234</td>
-                                    <td><span class="tag org">운영</span></td>
+                                    <td>test001</td>
+                                    <td>IT지원센터</td>
+                                    <td>IT지원센터</td>
+                                    <td>
+                                        <div class="style_rdo">
+                                            <input type="radio" checked="checked" id="rdo07_01" name="rdo_cont07">
+                                            <label for="rdo07_01"><span></span>관리자</label> 
+                                        </div>
+                                        <div class="style_rdo">
+                                            <input type="radio" id="rdo07_02" name="rdo_cont07">
+                                            <label for="rdo07_02"><span></span>일반사용자</label> 
+                                        </div>
+                                    </td>
+                                    <td><button class="btn_custom03 btn_custom_L"><span>적용</span></button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -297,11 +354,6 @@
                         <a href="#none"><span>4</span></a>
                         <a href="#none"><span class="next01">다음</span></a>
                         <a href="#none"><span class="next02">맨마지막으로</span></a>
-                    </div>
-                    <div class="btn_area clearfix">
-                        <div class="fl_r">
-                            <button class="btn_modify"><span>등록</span></button>
-                        </div>
                     </div>
                 </div>
                 <!-- //contents -->
