@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html lang="ko">
+<!DOCTYPE html>
+<html lang="ko"> 
 <head> 
 <meta charset="UTF-8"> 
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
@@ -183,92 +183,81 @@
     <!-- POPUP -->
     <div class="modal_wrap">
         <div class="modal_dimmed"></div>
-        <div class="madal" style="margin-top:-311px;"><!-- 팝업 height의 절반값 음수로 margin-top 추가 -->
+        <div class="madal" style="margin-top:-324px;"><!-- 팝업 height의 절반값 음수로 margin-top 추가 -->
             <a href="#none" class="btn_close"></a>
-            <h3 class="title">담당자 지정</h3>
-            <p class="subtit">검색</p>
-            <div class="madal_search_area01">
-                <span class="modal_sel">
-                    <select id="sel">
-                        <option>전체</option>
-                        <option>전체</option>
-                        <option>전체</option>
-                        <option>전체</option>
-                    </select>
-                </span>
-                <span class="input">
-                    <input type="text" placeholder="">
-                </span>
-                <a href="#none" class="btn_search">검색</a>
-            </div>
-            <p class="subtit">회원 리스트<span class="txt_red fl_r">담당자는 우리부 회원만 지정이 가능합니다.</span></p>
-            <div class="modal_content_inner">
-                <div class="table">
+            <h3 class="title">아이디찾기</h3>
+            <div class="modal_content">
+                <div class="modal_tbl_detail">
+                    <span class="txt_essen">* 입력필수</span>
                     <table>
                         <colgroup>
-                            <col width="10%"/>
-                            <col width="15%"/>
-                            <col width="20%"/>
-                            <col width="15%"/>
-                            <col width="25%"/>
-                            <col width=""/>
+                            <col width="30%">
+                            <col width="*">
                         </colgroup>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>이름</th>
-                                <th>부서명</th>
-                                <th>직급</th>
-                                <th>업무</th>
-                                <th>상태</th>
-                            </tr>
-                        </thead>
                         <tbody>
                             <tr>
-                                <td>
-                                    <div class="style_chk">
-                                        <input type="checkbox" checked="checked" id="chk01">
-                                        <label for="chk01"><span></span></label> 
-                                    </div>
-                                </td>
-                                <td>고두심</td>
-                                <td>정보처리관리담당관</td>
-                                <td>사무관</td>
+                                <th>기관명<strong class="essen">*</strong></th>
                                 <td>
                                     <span class="input02">
-                                        <input type="text" placeholder="유지보수" value="">
+                                        <input type="text" placeholder="기관명을 입력해주세요" value="">
                                     </span>
-                                </td><!-- 201108 필드영역 수정 -->
-                                <td>회원</td>
+                                    <button class="btn_custom02"><span>기관찾기</span></button>
+                                </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <div class="style_chk">
-                                        <input type="checkbox" id="chk02">
-                                        <label for="chk02"><span></span></label> 
-                                    </div>
-                                </td>
-                                <td>고두심</td>
-                                <td>정보처리관리담당관</td>
-                                <td>사무관</td>
+                                <th>이름<strong class="essen">*</strong></th>
                                 <td>
                                     <span class="input02">
-                                        <input type="text" placeholder="유지보수" value="">
+                                        <input type="text" placeholder="이름을 입력해주세요" value="">
                                     </span>
-                                </td><!-- 201108 필드영역 수정 -->
-                                <td>회원</td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>휴대전화<strong class="essen">*</strong></th>
+                                <td>
+                                    <span class="input02">
+                                        <input type="text" placeholder="예) 010-1234-5678" value="">
+                                    </span>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="comp_paging">
-                <a href="#none"><span class="prev01">이전</span></a>
-                <a href="#none"><span>1</span></a>
-                <a href="#none"><span class="next01">다음</span></a>
+            <div class="btn_area btn_center">
+                <button class="btn_cancel"><span>검색</span></button>
+            </div>
+            <div class="modal_content">
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col width="40%">
+                            <col width="*">
+                            <col width="40%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>기관명</th>
+                                <th>이름</th>
+                                <th>아이디</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="btn_area btn_center">
-                <button class="btn_modify"><span>저장</span></button>
                 <button class="btn_custom01"><span>닫기</span></button>
             </div>
         </div>
