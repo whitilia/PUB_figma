@@ -3,6 +3,7 @@
 .mobile{display:block !important;}
 .web{display:none !important;}
 .wrap{min-width:100%;height:100%;}
+.br{display:block;}
 /* header */
 .header{height:74px;position:relative;padding:0;}
 .header .menu{position:absolute;left:29px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);z-index:1;}
@@ -97,6 +98,19 @@
 .join_list_box li .cell .data{font-size:14px;}
 .join_list_box li .cell.num span{font-size:13px;width:30px;height:25px;line-height:25px;}
 .join_list_box li .cell.state .ico{width:60px;height:25px;font-size:14px;line-height:25px;}
+
+.login_wrap{width:auto;margin:40px;}
+.login_wrap .cont{padding:30px 40px;}
+.login_wrap .title{margin-bottom:20px;}
+.login_wrap .cont .inp_box label{font-size:18px;}
+
+.step_list li{font-size:14px;}
+.join_end_box {width:100%;}
+.join_end_box .cont{padding:55px 25px;}
+.join_end_box .cont .txt_area:after{height:125px;background:url(../images/contents/bg_join_end.png) no-repeat center top;background-size:auto 100%;}
+.join_end_box .cont .txt_area .tit{font-size:25px;}
+.join_end_box .cont .txt_area .tit > *{font-size:25px;}
+.join_end_box .cont .txt_area .txt{font-size:16px;}
 
 .footer{padding:30px 30px 65px;}
 }
