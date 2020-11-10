@@ -113,10 +113,21 @@ function process(e){
     }
 }
 function reply(e){ 
-    var tbl_reply_area = document.getElementsByClassName('tbl_reply_area');
-    for (var i = 0; i < tbl_reply_area.length; i++){
-        console.log(tbl_reply_area[i].children[i].className);
-        var tbl_btn_area = tbl_reply_area[i].getElementsByClassName('tbl_btn_area');
+    var reply_area = document.getElementsByClassName('reply_area');
+    var btn_view = document.getElementsByClassName('btn_view');
+    for (var i = 0; i < reply_area.length; i++){
+        btn_view[i].addEventListener("click", function(){
+                if(this.getAttribute('class')=='btn_view'){
+                    this.setAttribute('class', 'btn_view hide');
+                    this.getElementsByTagName('span')[0].innerHTML = '열기';
+                    this.previousElementSibling.style.display = "none";
+                }else{
+                    this.setAttribute('class', 'btn_view');
+                    this.getElementsByTagName('span')[0].innerHTML = '닫기';
+                    this.previousElementSibling.style.display = "table";
+                }
+        });
+        
     }
     
 }
