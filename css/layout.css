@@ -12,8 +12,16 @@ body,html{background:#F0F2F8;}
 .header .logo{float:left;}
 .header .gnb{float:right;}
 .gnb > a{vertical-align:top;display:inline-block;margin-right:20px;}
-.gnb .user{font-size:14px;color:#555;text-decoration:underline;margin-top:10px;}
-.gnb .alarm{display:inline-block;position:relative;margin-right:20px;}
+.gnb .user{position:relative;display:inline-block;vertical-align:top;margin-top:10px;margin-right:20px;}
+.gnb .user_name{font-size:14px;color:#555;text-decoration:underline;}
+.gnb .user_name.on{color:#A376FF;}
+.gnb .user_list li a:hover{color:#A376FF;}
+.user_box{position:absolute;width:300px;padding-top:10px;z-index:999;left:50%;margin-left:-150px;top:40px;display:none;}
+.user_box:before{content:'';position:absolute;left:0;right:0;margin:0 auto;top:1px;z-index:0;display:block;width:16px;height:10px;background:url(../images/contents/bg_alarm.png) no-repeat 0 0;} 
+.user_box .cont{padding:22px;position:relative;z-index:1;background:#A376FF;overflow:hidden;background:#fff;z-index:999;border-radius:20px;border: 2px solid #A376FF;box-sizing: border-box;box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);}
+.user_box .user_list li a{font-size:18px;color:#555;}
+.user_box .user_list li{margin-top:5px;}
+.gnb .alarm{display:inline-block;position:relative;margin-right:20px;vertical-align:top;}
 .gnb .alarm .num{position:absolute;z-index:9;top:-5px;right:-10px;text-indent:0;letter-spacing:0;color:#fff;background:#A376FF;font-size:11px;font-family: DoHyeon;padding:2px 5px 0;border-radius:8px;display:inline-block;}
 .gnb .alarm .btn_alarm{position:relative;display:inline-block;text-indent:-9999px;color:transparent;background:#E5E9F1 url(../images/common/ico_alarm.png) no-repeat center;width:48px;height:48px;border-radius:50%;opacity: 0.8;box-shadow: 0px 0px 8px #F9FAFF, inset 0px 2px 2px rgba(0, 0, 0, 0.05);}
 /* alarm box */
@@ -25,7 +33,6 @@ body,html{background:#F0F2F8;}
 .alarm_box .tab_list li > a{width:100%;display:block;background:#8658E4;border-radius:15px 15px 0 0 ;height:43px;line-height:43px;font-size:15px;color:#fff;text-align:center;}
 .alarm_box .tab_list li.on > a{background:#fff;color:#A376FF;}
 .alarm_box .tab_cont{padding:0 30px;background:#fff;display:none;}
-.alarm_box .tab_cont:first-child{display:block;}
 .alarm_box .tab_cont .alarm_list li{position:relative;padding:20px 0;border-bottom:1px solid #ddd;}
 .alarm_box .tab_cont .alarm_list li > a{display:inline-block;margin-right:18px;}
 .alarm_box .tab_cont .alarm_list li > a span{display:block;}
