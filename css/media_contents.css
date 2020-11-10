@@ -47,6 +47,7 @@
 /* btn_area */
 .btn_area .fl_r{float: none !important;text-align: center;}
 
-
+/* modal_wrap */
+.modal_wrap .madal{width: 90%;left: 5%;margin-left: 0;padding: 10px 20px 20px 20px;right: 5%;}
 
 }
