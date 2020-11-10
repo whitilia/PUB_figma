@@ -1,3 +1,4 @@
+/*
 $(function(){
     process();
     btnMenu();
@@ -81,4 +82,41 @@ function alarm(){
         $tabCont.eq(idx).show();
         $(this).addClass('on');
     });
+}
+*/
+
+window.addEventListener("load",init);
+function init(){
+    process();
+    reply();
+}
+
+
+function process(e){ 
+    var member_area = document.getElementsByClassName('member_area');
+    var type_list = document.getElementsByClassName('type_list');
+    var type_card = document.getElementsByClassName('type_card');
+    for (var i = 0; i < member_area.length; i++){
+        var member_area_a = member_area[i].getElementsByTagName('a');
+        member_area_a[0].addEventListener("click", function(){
+            this.setAttribute('class','btn_list on'); 
+            member_area_a[1].setAttribute('class','btn_card'); 
+            type_list[0].setAttribute('class','process_wrap type_list'); 
+            type_card[0].setAttribute('class','process_wrap type_card none'); 
+        });
+        member_area_a[1].addEventListener("click", function(){
+            member_area_a[0].setAttribute('class','btn_list'); 
+            this.setAttribute('class','btn_card on'); 
+            type_list[0].setAttribute('class','process_wrap type_list none'); 
+            type_card[0].setAttribute('class','process_wrap type_card'); 
+        });
+    }
+}
+function reply(e){ 
+    var tbl_reply_area = document.getElementsByClassName('tbl_reply_area');
+    for (var i = 0; i < tbl_reply_area.length; i++){
+        console.log(tbl_reply_area[i].children[i].className);
+        var tbl_btn_area = tbl_reply_area[i].getElementsByClassName('tbl_btn_area');
+    }
+    
 }

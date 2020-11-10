@@ -76,7 +76,7 @@ body,html{background:#F0F2F8;}
 
 /* IE only */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .num .gra{background: none;color:#2448E0;}
+    .num .gra{background: none !important;color:#2448E0;}
 }
 
 /* MAIN */
@@ -230,10 +230,14 @@ body,html{background:#F0F2F8;}
 
 .schedule_box{margin-top:60px;position:relative;}
 .schedule_box .tit{font-size:20px;color:#191D21;}
-.schedule_box .date_box{position:absolute;left:0;top:0;width:100%;text-align:center;}
-.schedule_box .date_box > span{display:inline-block;vertical-align:top;}
+.schedule_box .date_box{position:absolute;left:0;top:0;width:100%;text-align:center;height:25px;}
+.schedule_box .date_box > span{position:relative;display:inline-block;vertical-align:top;height:25px;}
+.schedule_box .date_box > span a{display:inline-block;}
 .schedule_box .date_box .btn_calendar{position:relative;display:inline-block;padding-right:40px;margin:0 10px;}
-.schedule_box .date_box .btn_calendar:after{content:'';display:inline-block;width:32px;height:34px;position:absolute;right:0;top:50%;margin-top:-14px;background:url(../images/contents/ico_cal02.png) no-repeat 0 0;}
+.schedule_box .date_box span:nth-child(2){margin:-1px 6px 0;}
+.schedule_box .date_box span:nth-child(2):after{content:'';cursor:pointer;display:inline-block;width:32px;height:34px;position:absolute;z-index:0;right:0;top:50%;margin-top:-14px;background:url(../images/contents/ico_cal02.png) no-repeat 0 0;}
+.schedule_box .date_box .datepicker{border:0;position:relative;cursor:pointer;z-index:1;background:transparent;height:15px;font-size:15px;width:105px;letter-spacing:0;padding:0;margin:0 5px;}
+.schedule_box .date_box .datepicker:read-only{color:#000 !important;background:transparent !important;}
 .conference_list{margin-top:30px;}
 .conference_list > li{margin-top:20px;}
 .conference_list > li:first-child{margin-top:0;}
@@ -317,6 +321,30 @@ body,html{background:#F0F2F8;}
 .join_end_box .cont .txt_area .tit > *{font-size:40px;}
 .join_end_box .cont .txt_area .txt{font-size:16px;color:#666;}
 .join_end_box .cont .btn_area{text-align:center;margin-top:40px;}
+
+/* calendar */
+.ui-widget.ui-widget-content{border:0;box-sizing: border-box;box-shadow: 100px 100px 85px rgba(32, 32, 35, 0.07);border-radius: 30px;}
+.ui-datepicker{padding:36px;border:0;width:382px;}
+.ui-datepicker .ui-datepicker-title{background:none;border:none;}
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year{letter-spacing:0;font-family:Rubik;font-weight:bold;color:#7694FF;border:none;background:none;padding:0;font-size:16px;z-index:1;position:relative;}
+.ui-datepicker select.ui-datepicker-year{width:50px;}
+.ui-datepicker-title:after{content:'.';display:inline-block;color:#7694FF;position:absolute;left:8px;right:0;margin:10px auto 0;font-size:16px;z-index:0;}
+.ui-datepicker select.ui-datepicker-month{width:30px;}
+.ui-datepicker .ui-datepicker-header{padding:0;height:50px;margin-bottom:20px;}
+.ui-datepicker .ui-datepicker-header select{height:50px;}
+.ui-widget-header{background:none;border:0;}
+.ui-datepicker .ui-datepicker-prev,.ui-datepicker .ui-datepicker-next{z-index:10;background: #FFFFFF;border: 1px solid #F2F2F2;box-sizing: border-box;border-radius: 4px;width:50px;height:50px;}
+.ui-datepicker .ui-datepicker-prev-hover{left:2px;top:2px;}
+.ui-datepicker .ui-datepicker-next-hover{right:2px;top:2px;}
+.ui-datepicker .ui-datepicker-prev span{background:url(../images/contents/ico_cal_prev.png) center;}
+.ui-datepicker .ui-datepicker-next span{background:url(../images/contents/ico_cal_next.png) center;}
+.ui-state-default, .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,.ui-button,.ui-button.ui-state-disabled:hover,.ui-button.ui-state-disabled:active{padding:0;letter-spacing:0;border:0;width:45px;height:45px;color:#7694FF;text-align:center;display:inline-block;background:none;line-height:45px;border-radius:4px;}
+.ui-state-default:hover{background:rgba(118,148,255,0.1);}
+.ui-state-default.ui-state-active{background:#7694FF;color:#fff;}
+.ui-datepicker table{table-layout:fixed;}
+.ui-datepicker th span{color:#ABABAB;font-size:12px;}
+.ui-datepicker th,.ui-datepicker td{width:45px;height:45px;padding:0;text-align:center;}
 
 /* color */
 .point1{color:#F44462;}
