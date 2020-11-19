@@ -59,8 +59,8 @@ a.btn_search{display:inline-block;line-height:48px;padding:0 35px;font-size:14px
 .btn_custom_L{padding: 0px 22px;}
 
 /* 태그 */
-.tag{display:inline-block;width:70px;height:34px;line-height: 34px;text-align: center;border-radius: 25px;color: #fff;font-size: 14px;font-weight: 500;}
-.tag.small{width:54px;height:30px;line-height:30px;}
+.tag{display:inline-block;min-width:70px;height:34px;line-height: 34px;text-align: center;border-radius: 25px;color: #fff;font-size: 14px;font-weight: 500;}
+.tag.small{min-width:54px;height:30px;line-height:30px;}
 .tag.blue{background: #7694FF;}
 .tag.org{background: #FC8C0E;}
 .tag.gray{background: #818898;}
@@ -71,7 +71,7 @@ a.btn_search{display:inline-block;line-height:48px;padding:0 35px;font-size:14px
 /* 페이징 */
 .comp_paging{text-align: center;margin-top: 40px;}
 .comp_paging a{display:inline-block;vertical-align:top;}
-.comp_paging a span{display:inline-block;width: 32px;height: 32px;line-height: 32px;text-align: center;background:#fff;border: 1px solid #D4D8DB;}
+.comp_paging a span{display:inline-block;width: 32px;height: 32px;line-height: 28px;text-align: center;background:#fff;border: 1px solid #D4D8DB;}
 .comp_paging a:hover span{border: 1px solid #7694FF;color: #7694FF;}
 .comp_paging a .prev01{text-indent: -9999px;background:#fff url(../images/contents/ico_prev.png) no-repeat center;}
 .comp_paging a:hover .prev01{background:#fff url(../images/contents/ico_prev.png) no-repeat center;}
@@ -147,6 +147,16 @@ textarea{display:inline-block;width:100%;height:80px;border:1px solid #D4D8DB;ba
 .process_wrap .obj_box .info.graph .bar i{position:absolute;top:0;left:0;display:inline-block;height:13px;text-indent: -9999px;background: #51C07F;box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.2);border-radius: 20px;}
 .process_wrap .obj_box .info.status .blue{color:#345FF9;}
 .process_wrap .obj_box .info.status .red{color:#F44462;}
+
+/* 프로세스 리스트형02 */
+.process_wrap.type_list02{margin-top: 20px;}
+.process_wrap.type_list02 .obj_box{position:relative;}
+.process_wrap.type_list02 .obj_box .title,
+.process_wrap.type_list02 .obj_box .info{padding-right: 50px;}
+.process_wrap.type_list02 .obj_box .upper{padding: 0 150px 15px 0;}
+.process_wrap.type_list02 .obj_box .lower{padding: 0 150px 0 70px;}
+.process_wrap.type_list02 .obj_box .lower:before{content: '';display:inline-block;width:10px;height:24px;background:url(../images/contents/ico_reply.png) center center no-repeat;margin-right: 10px;vertical-align:top;}
+.process_wrap.type_list02 .obj_box .right_area{position:absolute;;width:150px;top:50%;right:0;text-align: center;margin-top: -17px;}
 
 /* 프로세스 카드형 */
 .process_wrap.type_card{margin-left:-40px;overflow: hidden;}
@@ -421,7 +431,7 @@ body.noscl{overflow: hidden;}
 .sort_wrap .sort_cont{display:inline-block;margin-left: 10px;}
 .sort_wrap .sort_cont:first-of-type{margin-left: 0;}
 .sort_wrap .sort_cont.w_150{width: 150px;}
-.sort_wrap .btn_search{margin-left: 10px;}
+.sort_wrap .btn_search{display:inline-block;line-height:48px;padding:0 35px;font-size:14px;color:#fff;border:none;background:#818898;text-align:center;vertical-align: top;margin-left: 10px;}
 .sort_wrap .sort_rdo_cont + .btn_search{vertical-align: middle;}
 
 /* search_wrap */

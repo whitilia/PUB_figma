@@ -173,6 +173,11 @@ body,html{background:#F0F2F8;}
 .main_room_wrap .btn_bookmark_add span{color:#A3AAB6;position:relative;padding-right:58px;}
 .main_room_wrap .btn_bookmark_add span:after{content:'';position:absolute;right:0;top:50%;margin-top:-24px;width:48px;height:48px;border-radius:50%;display:inline-block;background: #F0F2F8 url(../images/contents/ico_add.png) no-repeat center;opacity: 0.8; box-shadow: -10px -10px 10px #F9FAFF, 10px 10px 10px rgba(67, 81, 92, 0.15), inset -2px -2px 2px rgba(255, 255, 255, 0.5), inset 2px 2px 2px rgba(0, 0, 0, 0.05);}
 .main_room_wrap .btn_bookmark_add.txt_none span{font-size:0;line-height:0;color:transparent;}
+/* content_room_wrap */
+.main_room_wrap.content_room_wrap{border:none;}
+.main_room_wrap.content_room_wrap .room_cont{padding:0;}
+.main_room_wrap.content_room_wrap .room_list_area{width:100%;}
+.main_room_wrap.content_room_wrap .room_list.col4 li{width:25%;float:left;}
 
 /* 나의 회원 상태 */
 .join_panel_box{margin-left:-40px;margin-top:30px;margin-bottom:60px;}
@@ -181,7 +186,7 @@ body,html{background:#F0F2F8;}
 .join_panel_box li .cont{display:block;height:198px;margin-left:40px;border: 1px solid #D4D8DB;box-sizing: border-box;box-shadow: 0px 2px 4px #EFF2F7;border-radius: 16px;}
 .join_panel_box li .cont span{display:block;}
 .join_panel_box li .cont .box{padding:33px 20px;position:relative;}
-.join_panel_box li .cont .box:after{content:'';position:absolute;top:15px;right:15px;display:block;width:24px;height:24px;background:url(../images/contents/ico_plus_off.png) no-repeat 0 0;}
+.join_panel_box li .cont .box:after{content:'';position:absolute;top:15px;right:15px;display:none;width:24px;height:24px;background:url(../images/contents/ico_plus_off.png) no-repeat 0 0;}
 .join_panel_box li .cont .box .tit{border-bottom:1px solid #D4D8DB;padding-bottom:18px;text-align:center;font-size:24px;color:#222;}
 .join_panel_box li .cont .box .num{user-select: none;vertical-align:middle;text-align:center;}
 .join_panel_box li .cont .box .num em{font-size:24px;color:#818898;}

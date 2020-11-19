@@ -14,6 +14,14 @@
 .tbl_wrap.horizontal table thead{display:none;}
 .tbl_wrap.horizontal table td{display: inline-block;position:relative;padding:0 10px;border: none;line-height: 38px;}
 
+/* flex0 */
+.tbl_wrap.horizontal.flex0 table thead{display:table-cell;}
+.tbl_wrap.horizontal.flex0 table tr{display:flex;border-bottom: 1px solid #D4D8DB;padding:0;}
+.tbl_wrap.horizontal.flex0 table th,
+.tbl_wrap.horizontal.flex0 table td{display:flex;width:100%;flex-grow: 1;border-left:1px solid #D4D8DB;border-bottom:none;justify-content: center;align-items: center;}
+.tbl_wrap.horizontal.flex0 table th:first-of-type,
+.tbl_wrap.horizontal.flex0 table td:first-of-type{border-left:none;}
+
 /* flex01 */
 .tbl_wrap.horizontal.flex01 table td:nth-child(1){width: 30px;background: url(../images/contents/bg_num.png) top 8px center no-repeat;}
 .tbl_wrap.horizontal.flex01 table td:nth-child(3):before{content: '';display:block;position:absolute;top:14px;left:0;width:1px;height:13px;background:#C4C4C4;}
