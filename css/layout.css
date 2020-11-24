@@ -51,7 +51,7 @@ body,html{background:#F0F2F8;}
 .lnb .box .menu > li > a:before{content:'';display:block;width:18px;height:18px;position:absolute;left:0;top:50%;margin-top:-9px;}
 .lnb .box .menu > li > a.plus:before{background:url(../images/contents/ico_lnb_plus_off.png) no-repeat 0 0;}
 .lnb .box .menu > li > a.more:before{background:url(../images/contents/ico_lnb_more_off.png) no-repeat 0 0;}
-.lnb .box .menu > li > a.calendar:before{background:url(../images/contents/ico_lnb_calendar_of.png) no-repeat 0 0;}
+.lnb .box .menu > li > a.calendar:before{background:url(../images/contents/ico_lnb_calendar_off.png) no-repeat 0 0;}
 .lnb .box .menu > li.on > a.plus:before{background:url(../images/contents/ico_lnb_plus_on.png) no-repeat 0 0;}
 .lnb .box .menu > li.on > a.more:before{background:url(../images/contents/ico_lnb_more_on.png) no-repeat 0 0;}
 .lnb .box .menu > li.on > a.calendar:before{background:url(../images/contents/ico_lnb_calendar_on.png) no-repeat 0 0;}
